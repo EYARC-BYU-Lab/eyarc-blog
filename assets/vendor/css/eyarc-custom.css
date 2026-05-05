@@ -60,13 +60,14 @@ p {
 }
 
 .e-content a {
-    color: #2e2d38;
+    color: #0081C5;
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .e-content a:hover {
-    color: #666;
+    color: #005a8c;
+    text-decoration: underline;
 }
 
 /* Breadcrumbs */
