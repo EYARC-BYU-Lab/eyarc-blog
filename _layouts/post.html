@@ -3,78 +3,100 @@
 <head>
   {% include head.html %}
 </head>
-<body id="top" class="header-fixed header-animated header-dark sticky-footer">
+<body id="top" class="header-fixed header-animated header-dark header-transparent sticky-footer">
   <div id="page-wrapper">
     {% include header.html %}
+
+    <div style="padding-top: 5rem;">
+      <div id="breadcrumbs">
+        <span itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="{{ '/' | relative_url }}"><span itemprop="name">Home</span></a>
+            <i class="fa fa-angle-right"></i>
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span itemprop="name">{{ page.title }}</span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <section id="blog-hero" class="section modular-hero hero">
+      <div class="hero-content" style="display: flex; align-items: center;">
+        <div class="text-container" style="flex: 1;">
+          <div class="image-overlay"></div>
+          <section class="container grid-lg" style="text-align: left; padding-top: 0;">
+
+            <h2 class="p-name">{{ page.title }}</h2>
+
+            <span class="blog-date">
+              <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+                <i class="fa fa-calendar"></i> {{ page.date | date: "%-d %b %Y" }}
+              </time>
+            </span>
+
+            {% if page.tags.size > 0 %}
+            <br>
+            <span class="tags" style="display:inline-block; margin-top:.5rem; margin-bottom:1rem;">
+              {% for tag in page.tags %}
+              <a class="label label-rounded label-secondary p-category"
+                 href="{{ '/' | relative_url }}?filter={{ tag | downcase | url_encode }}">{{ tag }}</a>
+              {% endfor %}
+            </span>
+            {% endif %}
+
+            <div class="e-content">
+              {{ content }}
+            </div>
+
+            <a href="https://www.ey.com/en_us/about-us/ey-foundation-and-university-relations/academic-resource-center"
+               class="custom-button-yellow">Join EYARC for Full Access</a>
+
+            <p class="prev-next" style="margin-top: 2rem;">
+              {% if page.next %}
+              <a class="btn" href="{{ page.next.url | relative_url }}">
+                <i class="fa fa-angle-left"></i> Prev Post
+              </a>
+              {% endif %}
+              {% if page.previous %}
+              <a class="btn" href="{{ page.previous.url | relative_url }}">
+                Next Post <i class="fa fa-angle-right"></i>
+              </a>
+              {% endif %}
+            </p>
+
+          </section>
+        </div>
+      </div>
+
+      <div class="custom-section">
+        <div class="custom-card">
+          <img src="{{ '/assets/images/classroom.jpg' | relative_url }}" alt="EYARC Experience Image">
+          <div class="custom-content">
+            <h2>EYARC Experience</h2>
+            <p>Turn case studies into powerful teaching moments for your students. Active EYARC users can explore our experiential learning platform to access cutting-edge curricula and innovative teaching resources.</p>
+            <a href="https://experience.eyarc.site/" class="custom-button-black">Try It Now</a>
+          </div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-content">
+            <h2>Academic Case Materials</h2>
+            <p>Access free resources to prepare students for the global marketplace. Resources include case studies, data sets, analytics workbooks, videos and many other tools focused on business and accounting topics.</p>
+            <a href="{{ '/' | relative_url }}#start" class="custom-button-black">Get Started</a>
+          </div>
+          <img src="{{ '/assets/images/desk.jpg' | relative_url }}" alt="Academic Case Materials Image">
+        </div>
+      </div>
+    </section>
 
     <section id="start">
       <section id="body-wrapper" class="section blog-listing">
         <section class="container grid-lg">
-
-          <div id="breadcrumbs" style="padding-top:5rem;">
-            <span itemscope itemtype="http://schema.org/BreadcrumbList">
-              <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                <a itemprop="item" href="{{ '/' | relative_url }}"><span itemprop="name">Home</span></a>
-                <i class="fa fa-angle-right"></i>
-              </span>
-              <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                <span itemprop="name">{{ page.title }}</span>
-              </span>
-            </span>
-          </div>
-
-          <div class="columns">
-            <div id="item" class="column col-9 col-md-12 extra-spacing">
-
-              <div class="content-item h-entry">
-                <div class="content-title text-center">
-                  <h2 class="p-name mt-1">{{ page.title }}</h2>
-
-                  <span class="blog-date">
-                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
-                      <i class="fa fa-calendar"></i> {{ page.date | date: "%-d %b %Y" }}
-                    </time>
-                  </span>
-
-                  {% if page.tags.size > 0 %}
-                  <br>
-                  <span class="tags" style="display:inline-block;margin-top:.5rem;">
-                    {% for tag in page.tags %}
-                    <a class="label label-rounded label-secondary p-category"
-                       href="{{ '/' | relative_url }}?filter={{ tag | downcase | url_encode }}">{{ tag }}</a>
-                    {% endfor %}
-                  </span>
-                  {% endif %}
-                </div>
-
-                <div class="e-content">
-                  {{ content }}
-                </div>
-              </div>
-
-              <p class="prev-next text-center">
-                {% if page.next %}
-                <a class="btn" href="{{ page.next.url | relative_url }}">
-                  <i class="fa fa-angle-left"></i> Prev Post
-                </a>
-                {% endif %}
-                {% if page.previous %}
-                <a class="btn" href="{{ page.previous.url | relative_url }}">
-                  Next Post <i class="fa fa-angle-right"></i>
-                </a>
-                {% endif %}
-              </p>
-
-            </div>
-
-            <div id="sidebar" class="column col-3 col-md-12">
-              {% include sidebar-post.html %}
-            </div>
-          </div>
-
+          {% include sidebar-post.html %}
         </section>
       </section>
     </section>
+
   </div>
 
   {% include footer.html %}
