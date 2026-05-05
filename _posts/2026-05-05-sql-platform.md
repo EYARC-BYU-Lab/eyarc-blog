@@ -19,6 +19,6 @@ Students will complete a series of SQL problems selected by their instructor. Th
 2. Interpret and navigate database schemas to understand how information is structured and related.
 3. Strengthen analytical thinking and problem-solving skills through experimentation with real datasets.
 
-- **Suitable courses:** Data analytics, AIS
+**Suitable courses:** Data analytics, AIS
 
 [You must have an account with EYARC Experience and then go to the Assignment Catalog to review. Look under "Templates"]([https://experience.eyarc.site/](https://experience.eyarc.site/))
