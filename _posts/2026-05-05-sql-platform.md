@@ -15,10 +15,8 @@ Students will complete a series of SQL problems selected by their instructor. Th
 
 **Learning objectives** 
 
-1. Write and execute SQL queries to retrieve, filter, organize, and alter data from relational tables. 
-
-2. Interpret and navigate database schemas to understand how information is structured and related. 
-
+1. Write and execute SQL queries to retrieve, filter, organize, and alter data from relational tables.
+2. Interpret and navigate database schemas to understand how information is structured and related.
 3. Strengthen analytical thinking and problem-solving skills through experimentation with real datasets.
 
 - **Suitable courses:** Data analytics, AIS
