@@ -7,7 +7,7 @@ author:
   email: eyarc@ey.com
 timezone: America/Denver
 future: true
-permalink: /:title/
+permalink: /blog/:title/
 plugins:
   - jekyll-feed
   - jekyll-sitemap
