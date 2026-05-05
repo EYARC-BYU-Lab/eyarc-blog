@@ -91,10 +91,10 @@ p {
     align-items: center;
 }
 
-/* Add the slash separator BEFORE each item */
-.eyarc-breadcrumbs li::before {
+/* Add the slash separator only AFTER the first item */
+.eyarc-breadcrumbs li:not(:first-child)::before {
     content: "/";
-    padding: 0 0.8rem;
+    padding: 0 1.2rem;
     color: #adb5bd;
     font-weight: 300;
 }
