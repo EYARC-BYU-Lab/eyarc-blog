@@ -2,7 +2,7 @@
 layout: post
 title: "EYARC Experience: AI Apprentice"
 date: 2026-06-04
-published: true
+published: false
 tags:
   - Class Audit
   - Class Financial
