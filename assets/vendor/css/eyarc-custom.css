@@ -90,9 +90,10 @@ p {
     align-items: center;
 }
 
+/* Add the slash separator BEFORE each item */
 .eyarc-breadcrumbs li::before {
     content: "/";
-    padding: 0 0.6rem;
+    padding: 0 0.8rem;
     color: #adb5bd;
     font-weight: 300;
 }
@@ -111,8 +112,9 @@ p {
     color: #3b4351;
 }
 
-.eyarc-breadcrumbs li:last-child {
-    padding-right: 0.5rem;
+/* Ensure the breadcrumb is horizontal and has no default Spectre styles interfering */
+.breadcrumb {
+    display: none !important; /* Hide Spectre's default if it accidentally gets applied */
 }
 
 /* Background Classes */
