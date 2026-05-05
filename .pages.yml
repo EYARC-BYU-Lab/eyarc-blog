@@ -33,4 +33,4 @@ content:
         list: true
       - name: body
         label: Content
-        type: rich-text
+        type: markdown
