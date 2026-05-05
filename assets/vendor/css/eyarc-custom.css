@@ -73,41 +73,46 @@ p {
 #breadcrumbs {
     margin-bottom: 0;
     padding-left: 0;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
-#breadcrumbs ul.breadcrumb {
+.eyarc-breadcrumbs {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    font-size: 0.9rem;
+    align-items: center;
 }
 
-#breadcrumbs .breadcrumb-item {
+.eyarc-breadcrumbs li {
     display: flex;
     align-items: center;
 }
 
-#breadcrumbs .breadcrumb-item:not(:last-child)::after {
-    content: ">";
-    padding: 0 0.5rem;
+.eyarc-breadcrumbs li::before {
+    content: "/";
+    padding: 0 0.6rem;
     color: #adb5bd;
-    font-size: 0.8rem;
+    font-weight: 300;
 }
 
-#breadcrumbs .breadcrumb-item a {
-    color: #ffe600;
+.eyarc-breadcrumbs li a {
+    color: #0081C5;
     text-decoration: none;
+    font-weight: 400;
 }
 
-#breadcrumbs .breadcrumb-item a:hover {
+.eyarc-breadcrumbs li a:hover {
     text-decoration: underline;
 }
 
-#breadcrumbs .breadcrumb-item {
-    color: #ffffff;
+.eyarc-breadcrumbs li.active {
+    color: #3b4351;
+}
+
+.eyarc-breadcrumbs li:last-child {
+    padding-right: 0.5rem;
 }
 
 /* Background Classes */
