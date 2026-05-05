@@ -30,70 +30,74 @@ content:
       - name: tag_topic
         label: Topic Tags
         type: select
-        list: true
         options:
-          - ABC Costing
-          - Dashboards
-          - Drones
-          - Ethics
-          - Ethics Mindset
-          - Interviewing
-          - Process Mining
-          - Professional Judgment
-          - Soft Skills
-          - Teaching Tools
-          - Visualization
-          - blockchain
+          multiple: true
+          values:
+            - ABC Costing
+            - Dashboards
+            - Drones
+            - Ethics
+            - Ethics Mindset
+            - Interviewing
+            - Process Mining
+            - Professional Judgment
+            - Soft Skills
+            - Teaching Tools
+            - Visualization
+            - blockchain
       - name: tag_class
         label: Class Tags
         type: select
-        list: true
         options:
-          - Class AIS
-          - Class Audit
-          - Class Business
-          - Class Cybersecurity
-          - Class Data Analytics
-          - Class Financial
-          - Class Forensics
-          - Class Management
-          - Class Managerial
-          - Class Personal Finance
-          - Class Sustainability
-          - Class Tax
+          multiple: true
+          values:
+            - Class AIS
+            - Class Audit
+            - Class Business
+            - Class Cybersecurity
+            - Class Data Analytics
+            - Class Financial
+            - Class Forensics
+            - Class Management
+            - Class Managerial
+            - Class Personal Finance
+            - Class Sustainability
+            - Class Tax
       - name: tag_level
         label: Difficulty Level
         type: select
-        list: true
         options:
-          - Level Beginner
-          - Level Intermediate
-          - Level Advanced
+          multiple: true
+          values:
+            - Level Beginner
+            - Level Intermediate
+            - Level Advanced
       - name: tag_tools
         label: Tools & Tech
         type: select
-        list: true
         options:
-          - AI
-          - Alteryx
-          - Celonis
-          - ChatGPT
-          - DataSnipper
-          - Database
-          - Excel
-          - GenAI
-          - PowerBI
-          - Python
-          - R
-          - RPA
-          - RegEx
-          - SQL
-          - TIBCO Spotfire
-          - Tableau
-          - UiPath
-          - VBA
+          multiple: true
+          values:
+            - AI
+            - Alteryx
+            - Celonis
+            - ChatGPT
+            - DataSnipper
+            - Database
+            - Excel
+            - GenAI
+            - PowerBI
+            - Python
+            - R
+            - RPA
+            - RegEx
+            - SQL
+            - TIBCO Spotfire
+            - Tableau
+            - UiPath
+            - VBA
       - name: tag_custom
-        label: Custom Tags (comma separated)
+        label: Custom Tags
         type: string
         list: true
       - name: body
