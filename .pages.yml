@@ -9,7 +9,7 @@ content:
     path: _posts
     filename:
       template: "{year}-{month}-{day}-{title}.md"
-      field: create
+      field: false
     fields:
       - name: layout
         type: string
@@ -23,7 +23,6 @@ content:
         label: Date
         type: date
         required: true
-      - name: published
         label: Published
         type: boolean
         default: true
