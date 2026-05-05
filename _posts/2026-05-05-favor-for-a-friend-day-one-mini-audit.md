@@ -16,4 +16,4 @@ This case is designed to give students an immediate, hands-on experience with wh
 
 **Suitable courses:** Introduction to auditing; audit (external or internal); principles (with instructor support); and forensic accounting
 
-[Link to download files (requires login)]([https://eyus.sharepoint.com/sites/EYARC/SitePages/Favor-for-a-friend---day-on.aspx](https://eyus.sharepoint.com/sites/EYARC/SitePages/Favor-for-a-friend---day-on.aspx))
+[Link to download files (requires login)](https://eyus.sharepoint.com/sites/EYARC/SitePages/Favor-for-a-friend---day-on.aspx)
