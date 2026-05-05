@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Vibe Coding'
 date: 2025-11-18
+published: true
 tags:
   - 'Class Data Analytics'
   - 'Level Beginner'

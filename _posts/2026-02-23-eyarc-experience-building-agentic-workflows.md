@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Building Agentic Workflows'
 date: 2026-02-23
+published: true
 tags:
   - 'Class Data Analytics'
   - 'Level Beginner'

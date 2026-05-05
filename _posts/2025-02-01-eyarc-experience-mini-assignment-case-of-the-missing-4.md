@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Mini Assignment: Case of the Missing 4'
 date: 2025-02-01
+published: true
 tags:
   - 'Class Financial'
   - 'Level Beginner'

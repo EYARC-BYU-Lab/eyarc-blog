@@ -2,6 +2,7 @@
 layout: post
 title: 'Peach State University Hotel Background Case (EY Helix General Ledger Analyzer for Students)'
 date: 2023-11-11
+published: true
 tags:
   - 'Class Audit'
   - 'Class Data Analytics'

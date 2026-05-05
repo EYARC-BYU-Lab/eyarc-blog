@@ -2,6 +2,7 @@
 layout: post
 title: 'IntegrateCo Case'
 date: 2023-11-11
+published: true
 tags:
   - 'Class AIS'
   - 'Class Audit'

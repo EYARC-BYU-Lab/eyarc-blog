@@ -2,6 +2,7 @@
 layout: post
 title: 'Artificial Intelligence: Swindle in the age of AI'
 date: 2024-06-02
+published: true
 tags:
   - 'Class Audit'
   - 'Class Data Analytics'

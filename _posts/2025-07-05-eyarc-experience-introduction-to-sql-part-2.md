@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Introduction to SQL – Part 2'
 date: 2025-07-05
+published: true
 tags:
   - 'Class AIS'
   - 'Class Data Analytics'

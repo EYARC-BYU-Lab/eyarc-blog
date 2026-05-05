@@ -2,6 +2,7 @@
 layout: post
 title: 'Peach State University Hotel case series (EY Helix General Ledger Analyzer for Students) Forensics case'
 date: 2023-01-01
+published: true
 tags:
   - 'Class Audit'
   - 'Level Intermediate'

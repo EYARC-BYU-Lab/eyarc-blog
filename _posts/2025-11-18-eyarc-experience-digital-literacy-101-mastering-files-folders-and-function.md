@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Digital Literacy 101: Mastering Files, Folders and Function'
 date: 2025-11-18
+published: true
 tags:
   - 'Class Data Analytics'
   - 'Level Beginner'

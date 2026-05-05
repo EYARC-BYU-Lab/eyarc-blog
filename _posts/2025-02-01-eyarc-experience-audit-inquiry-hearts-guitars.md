@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Audit Inquiry: Heart'
 date: 2025-02-01
+published: true
 tags:
   - 'Class Audit'
   - 'Level Beginner'

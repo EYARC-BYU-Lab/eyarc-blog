@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: SQL Fiddle - Revenues'
 date: 2026-02-23
+published: true
 tags:
   - 'Class Data Analytics'
   - 'Level Beginner'

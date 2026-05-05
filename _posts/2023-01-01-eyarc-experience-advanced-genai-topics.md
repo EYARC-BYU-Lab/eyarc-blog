@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Advanced GenAI Topics'
 date: 2023-01-01
+published: true
 tags:
   - 'Class AIS'
   - 'Class Data Analytics'

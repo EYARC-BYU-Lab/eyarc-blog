@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Basics of Audit Inquiry'
 date: 2025-02-01
+published: true
 tags:
   - 'Class Audit'
   - 'Level Beginner'

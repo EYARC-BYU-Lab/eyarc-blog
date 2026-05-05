@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Verifactum'
 date: 2025-02-09
+published: true
 tags:
   - 'Class Data Analytics'
   - 'Level Beginner'

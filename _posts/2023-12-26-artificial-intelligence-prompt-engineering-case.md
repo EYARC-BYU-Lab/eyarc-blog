@@ -2,6 +2,7 @@
 layout: post
 title: 'Artificial Intelligence: Prompt Engineering Case'
 date: 2023-12-26
+published: true
 tags:
   - 'Class AIS'
   - 'Class Audit'

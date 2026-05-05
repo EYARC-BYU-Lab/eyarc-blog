@@ -2,6 +2,7 @@
 layout: post
 title: 'Timp Health Case'
 date: 2023-05-10
+published: true
 tags:
   - 'Class Data Analytics'
   - 'Level Intermediate'

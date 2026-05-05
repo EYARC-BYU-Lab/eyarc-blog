@@ -2,6 +2,7 @@
 layout: post
 title: 'Fraud Risk Assessment Case 1'
 date: 2023-11-14
+published: true
 tags:
   - 'Class Audit'
   - 'Level Beginner'

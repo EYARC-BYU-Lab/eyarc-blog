@@ -2,6 +2,7 @@
 layout: post
 title: 'Maui wildfires'
 date: 2024-08-26
+published: true
 tags:
   - 'Class Sustainability'
   - 'Class Financial'

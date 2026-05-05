@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Generative AI enhanced professionalism framework'
 date: 2025-06-19
+published: true
 tags:
   - 'Level Beginner'
   - 'ChatGPT'

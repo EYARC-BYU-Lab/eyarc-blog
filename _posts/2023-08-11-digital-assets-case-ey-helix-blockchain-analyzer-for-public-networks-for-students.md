@@ -2,6 +2,7 @@
 layout: post
 title: 'Digital Assets Case: EY Helix Blockchain Analyzer for Public Networks for Students'
 date: 2023-08-11
+published: true
 tags:
   - 'Class AIS'
   - 'Class Audit'

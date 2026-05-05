@@ -2,6 +2,7 @@
 layout: post
 title: 'Tech Explorer Case'
 date: 2023-05-10
+published: true
 tags:
   - 'Class Audit'
   - 'Level Intermediate'

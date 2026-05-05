@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Agentic AI'
 date: 2025-03-09
+published: true
 tags:
   - 'Level Intermediate'
   - 'Class AIS'

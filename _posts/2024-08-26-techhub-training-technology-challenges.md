@@ -2,6 +2,7 @@
 layout: post
 title: 'TechHub.training (technology challenges)'
 date: 2024-08-26
+published: true
 tags:
   - 'Class Audit'
   - 'Class Financial'

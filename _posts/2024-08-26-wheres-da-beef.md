@@ -2,6 +2,7 @@
 layout: post
 title: 'Where'
 date: 2024-08-26
+published: true
 tags:
   - 'Class Audit'
   - 'Level Intermediate'

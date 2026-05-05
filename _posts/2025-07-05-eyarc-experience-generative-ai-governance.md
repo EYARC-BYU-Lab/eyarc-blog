@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Generative AI Governance'
 date: 2025-07-05
+published: true
 tags:
   - 'Class Business'
   - 'Class AIS'

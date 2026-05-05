@@ -2,6 +2,7 @@
 layout: post
 title: 'Excellence unleashed: GenAI for accounting innovators'
 date: 2025-01-17
+published: true
 tags:
   - 'Class AIS'
   - 'Class Data Analytics'

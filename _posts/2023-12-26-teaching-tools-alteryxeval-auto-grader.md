@@ -2,6 +2,7 @@
 layout: post
 title: 'Teaching Tools: AlteryxEval Auto Grader'
 date: 2023-12-26
+published: true
 tags:
   - 'Alteryx'
   - 'Teaching Tools'

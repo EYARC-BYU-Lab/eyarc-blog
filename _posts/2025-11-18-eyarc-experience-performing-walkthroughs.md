@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Performing Walkthroughs'
 date: 2025-11-18
+published: true
 tags:
   - 'Class Audit'
   - 'Level Intermediate'

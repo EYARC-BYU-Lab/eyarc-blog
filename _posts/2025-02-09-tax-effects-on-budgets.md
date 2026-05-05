@@ -2,6 +2,7 @@
 layout: post
 title: 'Tax effects on budgets'
 date: 2025-02-09
+published: true
 tags:
   - 'Class Tax'
   - 'Level Beginner'

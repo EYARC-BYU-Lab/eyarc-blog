@@ -2,6 +2,7 @@
 layout: post
 title: 'Pepsi and Coke reporting challenge'
 date: 2023-01-01
+published: true
 tags:
   - 'Class Financial'
   - 'Class Sustainability'

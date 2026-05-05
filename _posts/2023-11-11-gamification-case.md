@@ -2,6 +2,7 @@
 layout: post
 title: 'Gamification Case'
 date: 2023-11-11
+published: true
 tags:
   - 'Class AIS'
   - 'Class Data Analytics'

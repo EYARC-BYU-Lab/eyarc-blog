@@ -2,6 +2,7 @@
 layout: post
 title: 'Fairview Inc. Case 1'
 date: 2023-11-11
+published: true
 tags:
   - 'Class AIS'
   - 'Class Audit'

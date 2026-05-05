@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Prompt Engineering 2'
 date: 2025-11-18
+published: true
 tags:
   - 'Level Intermediate'
   - 'Class AIS'

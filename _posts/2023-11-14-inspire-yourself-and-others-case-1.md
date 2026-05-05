@@ -2,6 +2,7 @@
 layout: post
 title: 'Inspire Yourself and Others Case 1'
 date: 2023-11-14
+published: true
 tags:
   - 'Level Beginner'
   - 'Ethics Mindset'

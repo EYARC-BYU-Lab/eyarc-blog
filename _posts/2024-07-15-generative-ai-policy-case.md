@@ -2,6 +2,7 @@
 layout: post
 title: 'Generative AI policy case'
 date: 2024-07-15
+published: true
 tags:
   - 'Class Audit'
   - 'Class AIS'

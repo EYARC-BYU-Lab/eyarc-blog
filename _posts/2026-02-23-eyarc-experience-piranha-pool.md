@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Piranha Pool'
 date: 2026-02-23
+published: true
 tags:
   - 'Class Financial'
   - 'Level Beginner'

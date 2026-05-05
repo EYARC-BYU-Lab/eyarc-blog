@@ -2,6 +2,7 @@
 layout: post
 title: 'Process Mining Introduction Case'
 date: 2023-11-11
+published: true
 tags:
   - 'Class Audit'
   - 'Level Intermediate'

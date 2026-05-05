@@ -2,6 +2,7 @@
 layout: post
 title: 'TechWear Case'
 date: 2023-05-10
+published: true
 tags:
   - 'Class Audit'
   - 'Class Financial'

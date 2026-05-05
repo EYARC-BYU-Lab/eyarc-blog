@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Tax Interview: Barons of Bakersfield'
 date: 2025-02-01
+published: true
 tags:
   - 'Class Tax'
   - 'Level Intermediate'

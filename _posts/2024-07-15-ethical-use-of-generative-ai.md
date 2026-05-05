@@ -2,6 +2,7 @@
 layout: post
 title: 'Ethical use of generative AI'
 date: 2024-07-15
+published: true
 tags:
   - 'Class Audit'
   - 'Class Financial'

@@ -2,6 +2,7 @@
 layout: post
 title: 'Viz-a-thon Case'
 date: 2023-05-10
+published: true
 tags:
   - 'Class AIS'
   - 'Class Audit'

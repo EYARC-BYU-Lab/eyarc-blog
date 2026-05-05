@@ -2,6 +2,7 @@
 layout: post
 title: 'Bryan'
 date: 2024-08-26
+published: true
 tags:
   - 'Class Audit'
   - 'Class Data Analytics'

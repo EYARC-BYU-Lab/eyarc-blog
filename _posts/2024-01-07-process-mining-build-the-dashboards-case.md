@@ -2,6 +2,7 @@
 layout: post
 title: 'Process Mining Build the dashboards case'
 date: 2024-01-07
+published: true
 tags:
   - 'Class Audit'
   - 'Class AIS'

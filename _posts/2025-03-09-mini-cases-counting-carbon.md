@@ -2,6 +2,7 @@
 layout: post
 title: 'Mini Cases: Counting Carbon'
 date: 2025-03-09
+published: true
 tags:
   - 'Class Financial'
   - 'Level Beginner'

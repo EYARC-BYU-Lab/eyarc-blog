@@ -2,6 +2,7 @@
 layout: post
 title: 'Allowance for Doubtful Accounts Case'
 date: 2023-11-14
+published: true
 tags:
   - 'Level Beginner'
   - 'Professional Judgment'

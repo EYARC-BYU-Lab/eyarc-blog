@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Serenity Now: Profit'
 date: 2025-02-09
+published: true
 tags:
   - 'Level Beginner'
   - 'Tableau'

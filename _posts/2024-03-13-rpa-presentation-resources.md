@@ -2,6 +2,7 @@
 layout: post
 title: 'RPA Presentation Resources'
 date: 2024-03-13
+published: true
 tags:
   - 'Class AIS'
   - 'Class Data Analytics'

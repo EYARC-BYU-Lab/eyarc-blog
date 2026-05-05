@@ -2,6 +2,7 @@
 layout: post
 title: 'Mini Cases: BW Fishing'
 date: 2023-12-26
+published: true
 tags:
   - 'Class Financial'
   - 'Level Beginner'

@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: SQL Fiddle - Expenditures'
 date: 2026-02-23
+published: true
 tags:
   - 'Level Intermediate'
   - 'Class AIS'

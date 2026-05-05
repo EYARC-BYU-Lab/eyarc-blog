@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Soft Skills Presentation'
 date: 2025-11-18
+published: true
 tags:
   - 'Level Beginner'
   - 'Class Business'

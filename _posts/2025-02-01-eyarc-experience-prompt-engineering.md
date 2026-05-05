@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Prompt Engineering'
 date: 2025-02-01
+published: true
 tags:
   - 'Class AIS'
   - 'Class Data Analytics'

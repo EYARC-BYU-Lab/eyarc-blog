@@ -2,6 +2,7 @@
 layout: post
 title: 'Accounting for Income Taxes: Valuation Allowance Case'
 date: 2023-11-14
+published: true
 tags:
   - 'Level Beginner'
   - 'Professional Judgment'

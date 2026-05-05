@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Becoming with AI'
 date: 2026-03-01
+published: true
 tags:
   - 'Level Beginner'
   - 'Class Data Analytics'

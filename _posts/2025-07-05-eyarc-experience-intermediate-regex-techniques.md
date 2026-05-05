@@ -2,6 +2,7 @@
 layout: post
 title: 'EYARC Experience: Intermediate Regex Techniques'
 date: 2025-07-05
+published: true
 tags:
   - 'Class AIS'
   - 'Class Data Analytics'

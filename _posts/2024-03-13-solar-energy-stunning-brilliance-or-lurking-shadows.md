@@ -2,6 +2,7 @@
 layout: post
 title: 'Solar energy: Stunning brilliance or lurking shadows'
 date: 2024-03-13
+published: true
 tags:
   - 'Class Sustainability'
   - 'Level Beginner'

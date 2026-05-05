@@ -2,6 +2,7 @@
 layout: post
 title: 'Teaching Tools: Participation and attendance tracking tool (PATT)'
 date: 2024-03-01
+published: true
 tags:
   - 'Excel'
   - 'Teaching Tools'

@@ -2,6 +2,7 @@
 layout: post
 title: 'Introduction to the Analytics Mindset'
 date: 2025-07-05
+published: true
 tags:
   - 'Class Business'
   - 'Class AIS'

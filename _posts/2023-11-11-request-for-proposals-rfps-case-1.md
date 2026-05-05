@@ -2,6 +2,7 @@
 layout: post
 title: 'Blockchain 101 Course'
 date: 2023-11-11
+published: true
 tags:
   - 'Class AIS'
   - 'Level Beginner'

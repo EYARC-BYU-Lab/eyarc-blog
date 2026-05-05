@@ -2,6 +2,7 @@
 layout: post
 title: 'Inventory Lower of Cost or Market Case'
 date: 2023-11-14
+published: true
 tags:
   - 'Level Beginner'
   - 'Professional Judgment'

@@ -2,6 +2,7 @@
 layout: post
 title: 'Sharing Data and Information Case'
 date: 2023-11-14
+published: true
 tags:
   - 'Level Beginner'
   - 'Ethics Mindset'

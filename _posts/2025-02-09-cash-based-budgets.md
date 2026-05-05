@@ -2,6 +2,7 @@
 layout: post
 title: 'Cash-based budgets'
 date: 2025-02-09
+published: true
 tags:
   - 'Class Personal Finance'
   - 'Class Tax'

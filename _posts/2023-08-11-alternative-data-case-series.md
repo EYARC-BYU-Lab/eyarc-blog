@@ -2,6 +2,7 @@
 layout: post
 title: 'Alternative Data Overview Case'
 date: 2023-08-11
+published: true
 tags:
   - 'Class Financial'
   - 'Level Intermediate'

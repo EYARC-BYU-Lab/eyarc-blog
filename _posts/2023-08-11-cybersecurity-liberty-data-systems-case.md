@@ -2,6 +2,7 @@
 layout: post
 title: 'Cybersecurity: Liberty Data Systems Case'
 date: 2023-08-11
+published: true
 tags:
   - 'Class AIS'
   - 'Class Audit'
