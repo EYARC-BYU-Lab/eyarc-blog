@@ -1,24 +1,24 @@
 ---
 layout: post
-title: 'EYARC Experience: AI Apprentice'
+title: "EYARC Experience: AI Apprentice"
 date: 2026-06-04
+published: true
 tags:
-  - 'Class Audit'
-  - 'Class Financial'
-  - 'Level Intermediate'
-  - 'Class Tax'
-  - 'Class Business'
-  - 'Class AIS'
-  - 'Class Data Analytics'
-  - 'Level Beginner'
-  - 'Class Sustainability'
-  - 'Level Advanced'
-  - 'Class Forensics'
-  - 'Class Management'
-  - 'Class Cybersecurity'
-  - 'AI'
+  - Class Audit
+  - Class Financial
+  - Level Intermediate
+  - Class Tax
+  - Class Business
+  - Class AIS
+  - Class Data Analytics
+  - Level Beginner
+  - Class Sustainability
+  - Level Advanced
+  - Class Forensics
+  - Class Management
+  - Class Cybersecurity
+  - AI
 ---
-
 Research in cognitive science and education has shown that teaching others improves your ability to retain and understand information more effectively than passive studying. This assignment builds on that principle by asking you to mentor your own AI Apprentice well enough for it to pass a quiz. Your task is to read the provided material carefully and guide your AI Apprentice toward mastering the following learning objectives:
 
 The EYARC's AI Apprentice assignment brings that research into highly flexible classroom assignment:
