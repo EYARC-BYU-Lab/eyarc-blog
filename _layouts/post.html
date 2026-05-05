@@ -24,10 +24,19 @@
                     </time>
                   </span>
 
-                  {% if page.tags.size > 0 %}
+                  {% assign combined_tags = "" | split: "" %}
+                  {% if page.tags %}{% assign combined_tags = combined_tags | concat: page.tags %}{% endif %}
+                  {% if page.tag_topic %}{% assign combined_tags = combined_tags | concat: page.tag_topic %}{% endif %}
+                  {% if page.tag_class %}{% assign combined_tags = combined_tags | concat: page.tag_class %}{% endif %}
+                  {% if page.tag_level %}{% assign combined_tags = combined_tags | concat: page.tag_level %}{% endif %}
+                  {% if page.tag_tools %}{% assign combined_tags = combined_tags | concat: page.tag_tools %}{% endif %}
+                  {% if page.tag_custom %}{% assign combined_tags = combined_tags | concat: page.tag_custom %}{% endif %}
+                  {% assign combined_tags = combined_tags | uniq | compact %}
+
+                  {% if combined_tags.size > 0 %}
                   <br>
                   <span class="tags" style="display:inline-block;margin-top:.5rem;">
-                    {% for tag in page.tags %}
+                    {% for tag in combined_tags %}
                     <a class="label label-rounded label-secondary p-category"
                        href="{{ '/' | relative_url }}?filter={{ tag | downcase | url_encode }}">{{ tag }}</a>
                     {% endfor %}

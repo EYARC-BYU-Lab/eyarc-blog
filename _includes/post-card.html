@@ -1,5 +1,14 @@
 {% assign p = include.post %}
-<div class="card" data-tags="{{ p.tags | join: '|' | downcase }}">
+{% assign combined_tags = "" | split: "" %}
+{% if p.tags %}{% assign combined_tags = combined_tags | concat: p.tags %}{% endif %}
+{% if p.tag_topic %}{% assign combined_tags = combined_tags | concat: p.tag_topic %}{% endif %}
+{% if p.tag_class %}{% assign combined_tags = combined_tags | concat: p.tag_class %}{% endif %}
+{% if p.tag_level %}{% assign combined_tags = combined_tags | concat: p.tag_level %}{% endif %}
+{% if p.tag_tools %}{% assign combined_tags = combined_tags | concat: p.tag_tools %}{% endif %}
+{% if p.tag_custom %}{% assign combined_tags = combined_tags | concat: p.tag_custom %}{% endif %}
+{% assign combined_tags = combined_tags | uniq | compact %}
+
+<div class="card" data-tags="{{ combined_tags | join: '|' | downcase }}">
   <div class="card-header">
     <div class="card-subtitle text-gray">
       <span class="blog-date"><i class="fa fa-calendar"></i> {{ p.date | date: "%B %-d, %Y" }}</span>
@@ -11,9 +20,9 @@
   <div class="card-body">
     {{ p.excerpt | strip_html | truncatewords: 40 }}
   </div>
-  {% if p.tags.size > 0 %}
+  {% if combined_tags.size > 0 %}
   <div class="card-footer">
-    {% for tag in p.tags %}
+    {% for tag in combined_tags %}
     <span class="label label-rounded label-secondary">{{ tag }}</span>
     {% endfor %}
   </div>

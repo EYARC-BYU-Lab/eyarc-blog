@@ -1,7 +1,15 @@
 {% assign class_tags = "" | split: "" %}
 {% assign level_tags = "" | split: "" %}
 {% for post in site.posts %}
-  {% for tag in post.tags %}
+  {% assign current_tags = "" | split: "" %}
+  {% if post.tags %}{% assign current_tags = current_tags | concat: post.tags %}{% endif %}
+  {% if post.tag_topic %}{% assign current_tags = current_tags | concat: post.tag_topic %}{% endif %}
+  {% if post.tag_class %}{% assign current_tags = current_tags | concat: post.tag_class %}{% endif %}
+  {% if post.tag_level %}{% assign current_tags = current_tags | concat: post.tag_level %}{% endif %}
+  {% if post.tag_tools %}{% assign current_tags = current_tags | concat: post.tag_tools %}{% endif %}
+  {% if post.tag_custom %}{% assign current_tags = current_tags | concat: post.tag_custom %}{% endif %}
+
+  {% for tag in current_tags %}
     {% if tag contains "Class " %}
       {% assign class_tags = class_tags | push: tag %}
     {% elsif tag contains "Level " %}
