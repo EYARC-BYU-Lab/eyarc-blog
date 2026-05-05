@@ -1,11 +1,13 @@
 {% assign p = include.post %}
 {% assign combined_tags = "" | split: "" %}
-{% if p.tags %}{% assign combined_tags = combined_tags | concat: p.tags %}{% endif %}
-{% if p.tag_topic %}{% assign combined_tags = combined_tags | concat: p.tag_topic %}{% endif %}
-{% if p.tag_class %}{% assign combined_tags = combined_tags | concat: p.tag_class %}{% endif %}
-{% if p.tag_level %}{% assign combined_tags = combined_tags | concat: p.tag_level %}{% endif %}
-{% if p.tag_tools %}{% assign combined_tags = combined_tags | concat: p.tag_tools %}{% endif %}
-{% if p.tag_custom %}{% assign combined_tags = combined_tags | concat: p.tag_custom %}{% endif %}
+{% assign tag_fields = "tags,tag_topic,tag_class,tag_level,tag_tools,tag_custom" | split: "," %}
+{% for field in tag_fields %}
+  {% if p[field] %}
+    {% for tag in p[field] %}
+      {% assign combined_tags = combined_tags | push: tag %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 {% assign combined_tags = combined_tags | uniq | compact %}
 
 <div class="card" data-tags="{{ combined_tags | join: '|' | downcase }}">

@@ -25,12 +25,14 @@
                   </span>
 
                   {% assign combined_tags = "" | split: "" %}
-                  {% if page.tags %}{% assign combined_tags = combined_tags | concat: page.tags %}{% endif %}
-                  {% if page.tag_topic %}{% assign combined_tags = combined_tags | concat: page.tag_topic %}{% endif %}
-                  {% if page.tag_class %}{% assign combined_tags = combined_tags | concat: page.tag_class %}{% endif %}
-                  {% if page.tag_level %}{% assign combined_tags = combined_tags | concat: page.tag_level %}{% endif %}
-                  {% if page.tag_tools %}{% assign combined_tags = combined_tags | concat: page.tag_tools %}{% endif %}
-                  {% if page.tag_custom %}{% assign combined_tags = combined_tags | concat: page.tag_custom %}{% endif %}
+                  {% assign tag_fields = "tags,tag_topic,tag_class,tag_level,tag_tools,tag_custom" | split: "," %}
+                  {% for field in tag_fields %}
+                    {% if page[field] %}
+                      {% for tag in page[field] %}
+                        {% assign combined_tags = combined_tags | push: tag %}
+                      {% endfor %}
+                    {% endif %}
+                  {% endfor %}
                   {% assign combined_tags = combined_tags | uniq | compact %}
 
                   {% if combined_tags.size > 0 %}
