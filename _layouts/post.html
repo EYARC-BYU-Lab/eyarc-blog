@@ -7,21 +7,26 @@
   <div id="page-wrapper">
     {% include header.html %}
 
-    <section id="start">
-      <section id="body-wrapper" class="section" style="padding: 1rem 1rem;">
+    <section id="blog-hero" class="section modular-hero hero header-dark hero-tiny">
+      <div class="hero-content">
         <section class="container grid-lg">
-          
-          <div style="padding-top: 1.5rem; margin-bottom: 2rem;">
+          <div style="padding-top: 5rem;">
             <nav id="breadcrumbs">
-              <ul class="eyarc-breadcrumbs">
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li class="active">{{ page.title }}</li>
+              <ul>
+                <li><a href="{{ '/' | relative_url }}">Blog</a></li>
+                <li>{{ page.title }}</li>
               </ul>
             </nav>
           </div>
+        </section>
+      </div>
+    </section>
 
+    <section id="start">
+      <section id="body-wrapper" class="section">
+        <section class="container grid-lg">
           <div class="columns">
-            <div id="item" class="column col-12 extra-spacing">
+            <div id="item" class="column col-9 col-md-12 extra-spacing">
               <div class="content-item h-entry">
                 <div class="content-title">
                   <h2 class="p-name">{{ page.title }}</h2>
@@ -35,12 +40,6 @@
                 <div class="e-content">
                   {{ content }}
                 </div>
-
-                <div class="post-actions" style="margin-top: 3rem;">
-                  <a href="https://www.ey.com/en_us/about-us/ey-foundation-and-university-relations/academic-resource-center"
-                     class="custom-button-yellow">Join EYARC for Full Access</a>
-                </div>
-
                 {% if page.tags.size > 0 %}
                 <div class="post-footer" style="margin-top:2rem; padding-top:1rem; border-top:1px solid #e7e9ed;">
                   {% for tag in page.tags %}
@@ -48,7 +47,7 @@
                   {% endfor %}
                 </div>
                 {% endif %}
-                <div class="prev-next" style="margin-top:2rem; margin-bottom: 4rem;">
+                <div class="prev-next" style="margin-top:2rem;">
                   {% if page.previous %}
                   <a href="{{ page.previous.url | relative_url }}" class="btn btn-sm">
                     <i class="fa fa-angle-left"></i> {{ page.previous.title | truncatewords: 6 }}
@@ -62,29 +61,11 @@
                 </div>
               </div>
             </div>
+            <div id="sidebar" class="column col-3 col-md-12">
+              {% include sidebar.html %}
+            </div>
           </div>
         </section>
-
-        <div class="custom-section" style="background-color: #f9f9f9; padding: 4rem 1rem;">
-          <div class="container grid-lg">
-            <div class="custom-card">
-              <img src="{{ '/assets/images/classroom.jpg' | relative_url }}" alt="EYARC Experience Image">
-              <div class="custom-content">
-                <h2>EYARC Experience</h2>
-                <p>Turn case studies into powerful teaching moments for your students. Active EYARC users can explore our experiential learning platform to access cutting-edge curricula and innovative teaching resources.</p>
-                <a href="https://experience.eyarc.site/" class="custom-button-black">Try It Now</a>
-              </div>
-            </div>
-            <div class="custom-card">
-              <div class="custom-content">
-                <h2>Academic Case Materials</h2>
-                <p>Access free resources to prepare students for the global marketplace. Resources include case studies, data sets, analytics workbooks, videos and many other tools focused on business and accounting topics.</p>
-                <a href="{{ '/' | relative_url }}" class="custom-button-black">Get Started</a>
-              </div>
-              <img src="{{ '/assets/images/desk.jpg' | relative_url }}" alt="Academic Case Materials Image">
-            </div>
-          </div>
-        </div>
       </section>
     </section>
 
