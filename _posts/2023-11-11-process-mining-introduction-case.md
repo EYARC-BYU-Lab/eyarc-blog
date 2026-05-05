@@ -3,15 +3,17 @@ layout: post
 title: 'Process Mining Introduction Case'
 date: 2023-11-11
 published: true
-tags:
-  - 'Class Audit'
-  - 'Level Intermediate'
+tag_class:
   - 'Class AIS'
+  - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Class Managerial'
   - 'Class Forensics'
-  - 'SQL'
-  - 'Celonis'
+  - 'Class Managerial'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Celonis
+  - SQL
 ---
 
 Advances in database systems, data visualization and the understanding of business processes have come together to create an exciting and powerful way for organizations to gain a deep understanding of their data with a technique called process mining. Process mining uses event logs from an organization’s database systems to deeply analyze a process. The process mining curriculum materials are designed to give students an introduction to this emerging technology and its application to better understand how business processes actually occur, compared with how they are expected to occur.

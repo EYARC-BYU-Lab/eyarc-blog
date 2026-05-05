@@ -3,8 +3,9 @@ layout: post
 title: 'Mini Cases: Where'
 date: 2023-12-26
 published: true
-tags:
+tag_class:
   - 'Class Financial'
+tag_level:
   - 'Level Beginner'
 ---
 

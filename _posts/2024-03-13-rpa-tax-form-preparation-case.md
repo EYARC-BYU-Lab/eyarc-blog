@@ -3,14 +3,15 @@ layout: post
 title: 'RPA Tax form preparation case'
 date: 2024-03-13
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
-  - 'Level Intermediate'
   - 'Class Tax'
-  - 'RPA'
-  - 'Robotic Process Automation'
-  - 'UiPath'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - RPA
+  - UiPath
 ---
 
 In this case, the students help automate the preparation of tax Form 8805 for each foreign partner from the RiverBend Technologies whose earnings derive from the US and abroad. The case requirements include the completion of the overview case first. We strongly suggest this, although the case can be completed without this requirement. This case does not require the completion of the billing case, although the skills learned in that case will be beneficial to complete this case. Students are required to create a separate tax form (an Adobe pdf file) for each foreign partner using the tax data provided. 

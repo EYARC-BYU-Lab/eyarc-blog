@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Intermediate Regex Techniques'
 date: 2025-05-07
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'RegEx'
+tag_tools:
+  - RegEx
 ---
 
 Welcome to the Intermediate regular expression (regex) techniques assignment! The purpose of this assignment is to continue learning regex and its practical applications in accounting and finance. As a continuation of the “Foundations of regex” assignment, this assignment will teach more intermediate regex concepts including quantifiers, alternation, and anchors. By the end of this assignment, students will be able to validate data formats, extract information from unstructured data, and automate repetitive text-processing tasks.

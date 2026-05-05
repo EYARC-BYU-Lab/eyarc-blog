@@ -3,13 +3,15 @@ layout: post
 title: 'BioPhirma Case'
 date: 2023-11-08
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Level Intermediate'
-  - 'Alteryx'
   - 'Class Forensics'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Alteryx
 ---
 
 This case asks students to perform descriptive and text analyses on purchasing card data for BioPhirma, an innovative, global health care leader, to assess compliance with policies and to help investigate a whistle-blower tip about possible fraud being committed through purchasing card transactions. This case includes a real data set of over 82,000 transactions covering over 10,600 vendors and over 1,200 purchasing card users. The case is offered in Alteryx, which is a powerful tool for both ETL and data analytics. We provide instructions to obtain free academic licensing for you and your students. The case is accompanied with how-to videos.

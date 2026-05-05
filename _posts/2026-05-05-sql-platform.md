@@ -3,13 +3,15 @@ layout: post
 title: SQL Platform
 date: 2026-05-05
 published: true
-tags:
-  - Level Beginner
-  - Level Intermediate
-  - Level Advanced
+tag_class:
+  - 'Class AIS'
+  - 'Class Data Analytics'
+tag_level:
+  - 'Level Advanced'
+  - 'Level Beginner'
+  - 'Level Intermediate'
+tag_tools:
   - SQL
-  - Class AIS
-  - Class Data Analytics
 ---
 Students will complete a series of SQL problems selected by their instructor. This assignment can be structured at an introductory, intermediate, or advanced level, depending on the depth of the assessment desired. Professors may elect to give this assignment as homework or as an assessment. 
 

@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Building Agentic Workflows'
 date: 2026-02-23
 published: true
-tags:
+tag_class:
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'AI'
-  - 'GenAI'
+tag_tools:
+  - AI
+  - GenAI
 ---
 
 This assignment introduces students to multi-agent systems (MAS), showing how multiple artificial intelligence (AI) agents can work together to solve problems. Students will explore different types of agents, understand their roles, and build hands-on workflows using the low-code tool MindStudio. By replicating simple to more complex examples, students will see how agents interact in real-world scenarios.

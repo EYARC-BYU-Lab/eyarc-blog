@@ -3,15 +3,17 @@ layout: post
 title: 'Fairview Inc. Case 2'
 date: 2023-11-11
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Level Intermediate'
-  - 'Alteryx'
-  - 'Tableau'
-  - 'PowerBI'
   - 'Class Managerial'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Alteryx
+  - PowerBI
+  - Tableau
 ---
 
 This case series focuses on a fictitious company, Fairview Inc., a software-as-a-service company, that utilizes a travel expense reimbursement process for its sales and information technology employees who travel to customer locations. The Audit Committee would like to change its audit approach of these expenses from sampling and manual data collection to utilizing audit analytics procedures on 100% of all data newly collected through automation. The CFO is considering alternatives for the current reimbursement calculation method and employee assignment method for customer calls to better to optimize resources. Students are asked to complete the analyses and share findings and recommendations. The case series includes four cases that can be completed independently:

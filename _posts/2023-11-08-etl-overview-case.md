@@ -3,12 +3,14 @@ layout: post
 title: 'ETL Overview Case'
 date: 2023-11-08
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Intermediate'
-  - 'Alteryx'
-  - 'VBA'
+tag_tools:
+  - Alteryx
+  - VBA
 ---
 
 The Overview case covers fundamental considerations in the ETL process and requires students to confirm their understanding. This case can be used as an assessment tool.

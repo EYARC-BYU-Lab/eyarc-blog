@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Serenity Now: Sales'
 date: 2025-09-02
 published: true
-tags:
-  - 'Level Beginner'
-  - 'Tableau'
-  - 'Class Managerial'
+tag_class:
   - 'Class Data Analytics'
+  - 'Class Managerial'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - Tableau
 ---
 
 This assignment introduces some of the fundamentals of management accounting, focusing on how data analytics can improve sales in the dining establishments of a resort, Serenity Now. While the resort is fictious, the sales data is from a real organization and has been anonymized. Students will analyze dashboards, identify and analyze trends, and develop strategic recommendations.

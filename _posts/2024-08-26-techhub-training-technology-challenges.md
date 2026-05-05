@@ -3,33 +3,36 @@ layout: post
 title: 'TechHub.training (technology challenges)'
 date: 2024-08-26
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class Financial'
-  - 'Level Intermediate'
-  - 'Class Tax'
-  - 'Class AIS'
-  - 'Class Data Analytics'
-  - 'Alteryx'
-  - 'Level Beginner'
-  - 'Access'
-  - 'Tableau'
-  - 'Excel'
-  - 'Level Advanced'
-  - 'PowerBI'
-  - 'Class Managerial'
-  - 'Class Forensics'
-  - 'Class Cybersecurity'
-  - 'Python'
-  - 'RegEx'
-  - 'VBA'
-  - 'SQL'
-  - 'Celonis'
+tag_topic:
   - 'Process Mining'
   - 'Teaching Tools'
-  - 'ChatGPT'
-  - 'AI'
-  - 'Artificial Intelligence'
+tag_class:
+  - 'Class AIS'
+  - 'Class Audit'
+  - 'Class Cybersecurity'
+  - 'Class Data Analytics'
+  - 'Class Financial'
+  - 'Class Forensics'
+  - 'Class Managerial'
+  - 'Class Tax'
+tag_level:
+  - 'Level Advanced'
+  - 'Level Beginner'
+  - 'Level Intermediate'
+tag_tools:
+  - AI
+  - Alteryx
+  - Celonis
+  - ChatGPT
+  - Excel
+  - PowerBI
+  - Python
+  - RegEx
+  - SQL
+  - Tableau
+  - VBA
+tag_custom:
+  - Access
 ---
 
 [TechHub.training](https://www.techhub.training/) is an online resource built by BYU students and faculty. Its mission is to inspire learning in an online forum where students, teachers, and data experts develop, hone, and share expertise in important business technologies. The website is built around challenges in core business technologies, such as Excel, Tableau, PowerBI, Python, SQL, process mining, and more. Each challenge is accompanied by data sets, a task, and a solution video to guide learners. Users contribute by submitting their solutions, posing questions, or offering suggestions. This interactive approach not only fosters learning but also allows users to compile a portfolio. This portfolio becomes a digital record of their data analytic and technology capabilities, which can be showcased to prospective employers. All the resources on the platform are available for free.

@@ -3,11 +3,13 @@ layout: post
 title: 'Where'
 date: 2024-10-30
 published: true
-tags:
+tag_topic:
+  - Drones
+tag_class:
   - 'Class Audit'
-  - 'Level Intermediate'
   - 'Class Data Analytics'
-  - 'Drones'
+tag_level:
+  - 'Level Intermediate'
 ---
 
 In this two-part case, students are asked to assume the role of a consultant for Where’s da Beef (WDB), a large cattle feedlot in southern Kansas that owns approximately 30,000 head of cattle at any given time. In completing this case, students will learn more about the inventory process in general. They will also learn how drones and automated counting software, emerging technologies with a variety of business uses, can be effectively used to make inventory counting and auditing more efficient and effective.  

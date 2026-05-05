@@ -3,12 +3,14 @@ layout: post
 title: 'EYARC Experience: Introduction to SQL – Part 1'
 date: 2025-05-07
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'SQL'
-  - 'Database'
+tag_tools:
+  - Database
+  - SQL
 ---
 
 SQL, or Structured Query Language, is a powerful and widely used programming language designed to manage, query, and interact with relational databases. It serves as the backbone of countless applications, enabling users to retrieve specific information, manipulate data, define database structures, and control access to stored information. From small-scale projects to large enterprise systems, SQL is essential to efficiently organize and extract meaningful insights from data. This assignment focuses on querying information from a single table to teach many of the foundational SQL clauses.

@@ -3,9 +3,10 @@ layout: post
 title: 'Inventory Lower of Cost or Market Case'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Professional Judgment'
+tag_level:
+  - 'Level Beginner'
 ---
 
 A scenario where the student assumes the role of the controller for JK, a technology company, and must make a judgment about the carrying value of its LIFO inventory considering the lower of cost of market. 

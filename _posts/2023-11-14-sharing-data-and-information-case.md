@@ -3,9 +3,10 @@ layout: post
 title: 'Sharing Data and Information Case'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Ethics Mindset'
+tag_level:
+  - 'Level Beginner'
 ---
 
 This case has students read about a situation that involves a professional who shares data and information and then determine whether this behavior is unethical. Students are provided with the EY Global Code of Conduct to review and apply as a basis for the ethics determination. Students are asked to identify potential consequences of any unethical behavior. Students are also asked to identify situations in which students might act unethically in a college setting as it relates specifically to sharing data and information and what they feel professors should do to reduce the risk of this behavior. Lastly, students are asked to consider whether it is more difficult to act unethically and justify this behavior in a college setting or in a professional setting.

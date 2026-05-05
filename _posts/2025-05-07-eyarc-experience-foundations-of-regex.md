@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Foundations of Regex'
 date: 2025-05-07
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
-  - 'RegEx'
+tag_level:
   - 'Level Beginner'
+tag_tools:
+  - RegEx
 ---
 
 Welcome to the Foundations of regex assignment! This assignment aims to introduce students to the fundamentals of regular expressions (regex) and their practical applications in accounting and finance. Students will learn essential regex concepts, including matching literal characters, using metacharacters and applying character ranges. By the end of this assignment, students will be better equipped to validate data formats, extract information from unstructured data and automate repetitive text-processing tasks.

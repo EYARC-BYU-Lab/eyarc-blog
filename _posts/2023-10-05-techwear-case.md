@@ -3,15 +3,17 @@ layout: post
 title: 'TechWear Case'
 date: 2023-10-05
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class Financial'
+tag_class:
   - 'Class AIS'
+  - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Level Beginner'
-  - 'Tableau'
-  - 'Excel'
+  - 'Class Financial'
   - 'Class Forensics'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - Excel
+  - Tableau
 ---
 
 Students will work with a structured data set of several thousand cash, sales, accounts receivable and cost of goods sold subledger transactions for the first two years of operations of TechWear, a start-up company that manufactures and sells upper-end, high-tech sportswear. Students will gain insights into TechWear’s order-to-cash cycle, develop an accounts receivable trial balance and aging schedule and perform an analysis on accounts receivable, sales and cost of goods sold balances. Students will need to interpret their analyses and provide recommendations to the audit committee. The case is offered in both Excel and Tableau and is accompanied by how to videos.

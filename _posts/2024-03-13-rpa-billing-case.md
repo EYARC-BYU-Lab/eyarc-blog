@@ -3,13 +3,14 @@ layout: post
 title: 'RPA Billing Case'
 date: 2024-03-13
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'RPA'
-  - 'Robotic Process Automation'
-  - 'UiPath'
+tag_tools:
+  - RPA
+  - UiPath
 ---
 
 In this case, the students help automate an existing manual process to bill customers for wood products sold by Wood’s Amazing Woods Inc. The case requirements include the completion of the overview case first. We strongly suggest this although the case can be completed without this requirement. This case has three parts, which increase with complexity. Each part has a unique, fictional data set of transactions. All parts use the same invoice template to complete the case:

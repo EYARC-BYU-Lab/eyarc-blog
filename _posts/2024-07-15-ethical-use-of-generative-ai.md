@@ -3,17 +3,19 @@ layout: post
 title: 'Ethical use of generative AI'
 date: 2024-07-15
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class Financial'
-  - 'Level Intermediate'
-  - 'Class AIS'
-  - 'Class Data Analytics'
-  - 'Class Managerial'
+tag_topic:
   - 'Ethics Mindset'
-  - 'ChatGPT'
-  - 'AI'
-  - 'Artificial Intelligence'
+tag_class:
+  - 'Class AIS'
+  - 'Class Audit'
+  - 'Class Data Analytics'
+  - 'Class Financial'
+  - 'Class Managerial'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - AI
+  - ChatGPT
 ---
 
 This two-part case guides students through the exploration of generative AI technology while emphasizing the importance of using it ethically. The case has students complete a critical analysis of generative AI’s potential uses in various accounting domains and consider strategies for its ethical implementation.

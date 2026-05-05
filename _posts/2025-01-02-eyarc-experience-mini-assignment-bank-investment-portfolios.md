@@ -3,11 +3,14 @@ layout: post
 title: 'EYARC Experience: Mini Assignment: Bank Investment Portfolios'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Dashboards
+tag_class:
   - 'Class Financial'
+tag_level:
   - 'Level Beginner'
-  - 'Tableau'
-  - 'Dashboards'
+tag_tools:
+  - Tableau
 ---
 
 In this assignment, you will analyze the investment portfolios of banks in response to regulatory changes implemented by the Federal Reserve following the financial crisis of 2007-2008. By examining how banks classified their investments as either available-for-sale (AFS) or held-to-maturity (HTM), you will assess the impact of these classifications on the banks' regulatory capital and financial reporting. This analysis will involve using dashboard visualizations to identify trends in investment portfolios and understanding the implications for bank stability and transparency.

@@ -3,14 +3,16 @@ layout: post
 title: 'Teaching Tools: PMELG Tool'
 date: 2023-12-26
 published: true
-tags:
+tag_topic:
+  - 'Process Mining'
+  - 'Teaching Tools'
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
   - 'Class Data Analytics'
   - 'Class Managerial'
-  - 'Celonis'
-  - 'Process Mining'
-  - 'Teaching Tools'
+tag_tools:
+  - Celonis
 ---
 
 The Process Mining Event Log Generator (PMELG) tool is a macro-enabled Excel workbook that generates data for the order-to-cash process for use in process mining applications. Process mining uses event logs from an organization's database systems to deeply analyze a process. The PMELG tool allows you to change data based on what you want to teach your students. You can introduce control weaknesses or potential fraud. You can create segregation of duties issues or have transactions skip important controls like credit approvals. 

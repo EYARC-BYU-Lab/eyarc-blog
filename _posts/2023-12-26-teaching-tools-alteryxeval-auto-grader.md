@@ -3,9 +3,10 @@ layout: post
 title: 'Teaching Tools: AlteryxEval Auto Grader'
 date: 2023-12-26
 published: true
-tags:
-  - 'Alteryx'
+tag_topic:
   - 'Teaching Tools'
+tag_tools:
+  - Alteryx
 ---
 
 The AlteryxEval tool automates the grading process of your students’ Alteryx workflows. The tool uses macros to grade the Alteryx workflows quickly, allowing you to provide instant feedback to your students and helping them learn from their mistakes and make improvements more quickly. Using this AlteryxEval technology tool to grade removes individual bias and reduces mistakes, improving overall fairness and consistency in your grading and hopefully, minimizing disputes and challenges over grades.

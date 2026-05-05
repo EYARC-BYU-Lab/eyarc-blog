@@ -3,11 +3,13 @@ layout: post
 title: 'Tax effects on budgets'
 date: 2025-09-02
 published: true
-tags:
-  - 'Class Tax'
-  - 'Level Beginner'
-  - 'Excel'
+tag_class:
   - 'Class Personal Finance'
+  - 'Class Tax'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - Excel
 ---
 
 Tax effects on budgets is the second case in our financial literacy personal budget series. The nine-part case aims to help students understand how taxes influence personal financial decisions, employment choices, and retirement planning. Each part is designed to deepen students’ understanding of tax implications while strengthening their Excel skills through scenario analysis and problem-solving.

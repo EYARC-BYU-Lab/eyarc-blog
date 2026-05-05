@@ -3,10 +3,11 @@ layout: post
 title: 'Introduction to the Analytics Mindset'
 date: 2025-05-07
 published: true
-tags:
-  - 'Class Business'
+tag_class:
   - 'Class AIS'
+  - 'Class Business'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
 ---
 

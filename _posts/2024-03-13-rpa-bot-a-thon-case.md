@@ -3,13 +3,14 @@ layout: post
 title: 'RPA Bot-a-thon case'
 date: 2024-03-13
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Intermediate'
-  - 'RPA'
-  - 'Robotic Process Automation'
-  - 'UiPath'
+tag_tools:
+  - RPA
+  - UiPath
 ---
 
 In this case, students will identify a process in business or in their personal life that can be automated using RPA and develop the bot to automate this process. Students can develop a bot that has different levels of sophistication in terms of how many programs it interacts with and that uses various principles (variables, looping, if/then logic, try/catch activity). Students are also encouraged to learn on their own and teach themselves an additional principle, technique, activity or anything else unique that they can demonstrate with the bot. The case is written to be completed on an individual basis and a grading rubric is provided.

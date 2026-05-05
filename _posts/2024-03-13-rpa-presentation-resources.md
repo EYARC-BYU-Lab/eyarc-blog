@@ -3,13 +3,14 @@ layout: post
 title: 'RPA Presentation Resources'
 date: 2024-03-13
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
-  - 'RPA'
-  - 'Robotic Process Automation'
-  - 'UiPath'
+tag_level:
   - 'Level Beginner'
+tag_tools:
+  - RPA
+  - UiPath
 ---
 
 An overview slide presentation provides students initial exposure to RPA and is recommended to cover before asking students to complete any cases. The presentation coverage includes: innovation mindset (definition and importance); RPA foundational concepts (definition, primary uses, evolution, typical process characteristics, benefits, challenges); Approach to implementing RPA (process steps, skillsets and roles); applications of RPA in audit and tax; RPA vendors (to gain insights into different tools and their characteristics and specializations); RPA tool walkthrough (UiPath).

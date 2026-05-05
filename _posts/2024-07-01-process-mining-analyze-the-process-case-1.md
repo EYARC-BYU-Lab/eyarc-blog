@@ -3,14 +3,17 @@ layout: post
 title: 'Process Mining Analyze the process case 1'
 date: 2024-07-01
 published: true
-tags:
+tag_topic:
+  - 'Process Mining'
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
   - 'Class Data Analytics'
   - 'Class Managerial'
+tag_level:
   - 'Level Beginner'
-  - 'Process Mining'
-  - 'Celonis'
+tag_tools:
+  - Celonis
 ---
 
 This case has students use the process mining dashboards provided to analyze the order-to-cash cycle for BWF Fishing Inc. The case requires students to use the dashboards to analyze this process based on the perspectives of different departments within the company, including Internal Audit, Corporate Accounting and Finance, and Information Technology.

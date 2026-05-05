@@ -3,15 +3,17 @@ layout: post
 title: 'Oh Canada Case 4'
 date: 2023-11-11
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Level Intermediate'
-  - 'Alteryx'
-  - 'Class Managerial'
   - 'Class Forensics'
-  - 'SQL'
+  - 'Class Managerial'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Alteryx
+  - SQL
 ---
 
 This case series focuses on data normalization and writing SQL queries of a relational database to answer accounting questions. The real-world data represents travel expenses of Canadian government workers. These cases can each be assigned independently, or they can be sequenced to provide an overview of relational databases and introduce SQL queries. 

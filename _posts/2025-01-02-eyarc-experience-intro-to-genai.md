@@ -3,13 +3,15 @@ layout: post
 title: 'EYARC Experience: Intro To GenAI'
 date: 2025-01-02
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
-  - 'ChatGPT'
-  - 'Artificial Intelligence'
-  - 'GenAI'
+tag_level:
   - 'Level Beginner'
+tag_tools:
+  - AI
+  - ChatGPT
+  - GenAI
 ---
 
 Understanding generative AI (GenAI) is crucial for modern accounting practices. AI technologies are rapidly transforming the processing, analysis, and reporting of financial data. According to the Big 4 accounting firm EY, “75% of wealth and asset managers are already building or mobilizing GenAI teams” (EY). Incorporating AI allows accounting professionals to enhance efficiency, reduce errors, and gain deeper insights into financial data. This assignment aims to give you a foundational knowledge of generative AI and its applications in accounting.

@@ -3,13 +3,15 @@ layout: post
 title: 'Alternative Data Apollo Investments Research Case'
 date: 2023-11-08
 published: true
-tags:
+tag_class:
   - 'Class AIS'
-  - 'Class Financial'
   - 'Class Data Analytics'
+  - 'Class Financial'
+tag_level:
   - 'Level Intermediate'
-  - 'Alteryx'
-  - 'Tableau'
+tag_tools:
+  - Alteryx
+  - Tableau
 ---
 
 The Apollo Investments Research case is designed to provide students a hands-on opportunity to develop their analytics mindset by working directly with alternative data, which is satellite imagery of parking lots for four major companies (Home Depot, Lowe’s, Target and Walmart). Students will assume the role of a financial analyst at Apollo and are asked to consider whether the use of this data can assist Apollo in improving its financial forecasts, valuations and investment recommendations.

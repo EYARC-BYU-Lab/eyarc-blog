@@ -3,10 +3,11 @@ layout: post
 title: 'EYARC Experience: Advanced GenAI Topics'
 date: 2025-05-07
 published: true
-tags:
+tag_class:
   - 'Class AIS'
-  - 'Class Data Analytics'
   - 'Class Business'
+  - 'Class Data Analytics'
+tag_level:
   - 'Level Advanced'
   - 'Level Intermediate'
 ---

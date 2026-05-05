@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Advanced Regex Techniques'
 date: 2025-05-07
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Advanced'
-  - 'RegEx'
+tag_tools:
+  - RegEx
 ---
 
 The purpose of this assignment is to continue building regex skills and understand its practical applications in accounting and finance domains. As a continuation of the “Intermediate Regex Techniques” assignment, this assignment teaches more advanced regex concepts including lazy quantifiers, grouping patterns, and flags. By the end of this assignment, students will be able to validate data formats, extract information from unstructured data, and automate repetitive text-processing tasks.

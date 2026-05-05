@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Data Modeling ERD'
 date: 2025-05-07
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'Database'
+tag_tools:
+  - Database
 ---
 
 This assignment explores Data Modeling and Entity-Relationship Diagrams (ERDs). You`ll understand how data modeling structures databases, learn to identify components in ERDs, and apply this knowledge to real-world database scenarios.

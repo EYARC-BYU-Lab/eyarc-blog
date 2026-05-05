@@ -3,13 +3,16 @@ layout: post
 title: 'Process Mining Build the dashboards case'
 date: 2024-07-01
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class AIS'
-  - 'Class Data Analytics'
-  - 'Level Intermediate'
+tag_topic:
   - 'Process Mining'
-  - 'Celonis'
+tag_class:
+  - 'Class AIS'
+  - 'Class Audit'
+  - 'Class Data Analytics'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Celonis
 ---
 
 This case helps students learn the process of building process mining dashboards in a walkthrough format using Celonis software (freely available). This case is an introductory case and as such, does not require significant student judgment or experience. Rather, this case is designed to help students learn the basics of the Celonis process mining software so they can build their own dashboards in the future and be better prepared to use the process mining dashboards provided in the subsequent cases. A video is also provided to walk students through the step-by-step procedures to build the dashboards. 

@@ -3,9 +3,10 @@ layout: post
 title: Financial Memo - Preparing Memos
 date: 2026-05-05
 published: true
-tags:
-  - Class Financial
-  - Level Advanced
+tag_class:
+  - 'Class Financial'
+tag_level:
+  - 'Level Advanced'
 ---
 You intern on the research team at Summit Advisory, a consulting firm. A client, Sunbeam Energy, has asked your team to investigate one of five financial reporting issues that could affect their business. Specifically, they are asking about the following topics:
 

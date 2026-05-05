@@ -3,12 +3,14 @@ layout: post
 title: 'EYARC Experience: Prompt Engineering 2'
 date: 2025-11-18
 published: true
-tags:
-  - 'Level Intermediate'
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
-  - 'AI'
-  - 'GenAI'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - AI
+  - GenAI
 ---
 
 In this assignment, you’ll build on the foundations learned in the EYARC Experience Prompt engineering 1 assignment. You’ll learn advanced prompting techniques, explore how to prompt reasoning models, and create effective system prompts. You’ll also get hands-on practice evaluating generative AI (GenAI) prompts and outputs — a key skill for using artificial intelligence (AI) responsibly and effectively.

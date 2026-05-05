@@ -3,12 +3,14 @@ layout: post
 title: 'Artificial Intelligence: Taxing Questions, AI-Powered Answers Case'
 date: 2023-12-26
 published: true
-tags:
+tag_class:
   - 'Class Data Analytics'
   - 'Class Tax'
+tag_level:
   - 'Level Beginner'
-  - 'ChatGPT'
-  - 'AI'
+tag_tools:
+  - AI
+  - ChatGPT
 ---
 
 This case has students practice and experiment with different ways to use an LLM to answer relevant tax questions by delving into four different tax scenarios. Students will deepen their understanding of when these LLM tools are useful, but also become aware of their limitations. Students will experiment and iterate with the prompts they give to the LLM to get a clearer answer. Students will learn that one benefit of using AI is its ability to pull in information they haven’t yet had a chance to learn, be exposed to or did not consider.

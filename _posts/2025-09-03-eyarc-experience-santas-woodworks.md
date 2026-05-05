@@ -3,10 +3,12 @@ layout: post
 title: 'EYARC Experience: Santa'
 date: 2025-09-03
 published: true
-tags:
-  - 'Level Beginner'
-  - 'Class Managerial'
+tag_topic:
   - 'ABC Costing'
+tag_class:
+  - 'Class Managerial'
+tag_level:
+  - 'Level Beginner'
 ---
 
 This assignment allows students to apply their managerial accounting knowledge in an interactive story that focuses on activity-based costing (ABC). Students will identify how ABC impacts the gross margins of businesses compared with other costing methods, helping them practice making critical business decisions to increase profitability.

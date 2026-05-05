@@ -3,17 +3,19 @@ layout: post
 title: 'Viz-a-thon Case'
 date: 2023-10-05
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Level Intermediate'
-  - 'Tableau'
-  - 'Class Tax'
-  - 'Level Advanced'
-  - 'PowerBI'
   - 'Class Managerial'
+  - 'Class Tax'
+tag_level:
+  - 'Level Advanced'
   - 'Level Beginner'
+  - 'Level Intermediate'
+tag_tools:
+  - PowerBI
+  - Tableau
 ---
 
 This case is designed for a class focused on data visualization techniques and skills and may be used in a stand-alone data analytics class or as part of an accounting information systems course. A key feature of this case is that it is open ended. Students are required to generate their own interesting question; extract, transform and load data to analyze this question; and then present a finalized visualization to communicate the answer to their question.

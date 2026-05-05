@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Database Anomalies'
 date: 2025-01-02
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'Database'
+tag_tools:
+  - Database
 ---
 
 Learn about different types of anomalies in this assignment. This is a temporary overview that is being pulled directly from the database. We need to have the content teams replace it with a description of their choice.

@@ -3,13 +3,15 @@ layout: post
 title: 'DataSnipper: Byte Me Consultants'
 date: 2023-12-26
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
-  - 'Excel'
-  - 'Level Beginner'
   - 'Class Forensics'
-  - 'DataSnipper'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - DataSnipper
+  - Excel
 ---
 
 In this case, students will use the DataSnipper technology to help them review expense reimbursement receipts for an IT Consulting firm. Students are asked to review the legitimacy of each expense and to review compliance with established company policies and procedures.

@@ -3,9 +3,10 @@ layout: post
 title: 'Pepsi and Coke reporting challenge'
 date: 2024-10-30
 published: true
-tags:
+tag_class:
   - 'Class Financial'
   - 'Class Sustainability'
+tag_level:
   - 'Level Beginner'
 ---
 

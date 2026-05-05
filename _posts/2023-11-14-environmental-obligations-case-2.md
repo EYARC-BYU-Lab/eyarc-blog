@@ -3,9 +3,10 @@ layout: post
 title: 'Environmental Obligations Case 2'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Professional Judgment'
+tag_level:
+  - 'Level Beginner'
 ---
 
 A scenario where the student assumes the role of the new controller of United Super Steel, a steel producer, and must make a judgment about recording an environmental obligation due to contamination of a production site over a multi-year period.

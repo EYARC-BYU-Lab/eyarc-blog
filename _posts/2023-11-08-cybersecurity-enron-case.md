@@ -3,15 +3,17 @@ layout: post
 title: 'Cybersecurity: Enron Case'
 date: 2023-11-08
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
-  - 'Class Data Analytics'
-  - 'Level Intermediate'
-  - 'Alteryx'
-  - 'Class Forensics'
   - 'Class Cybersecurity'
-  - 'RegEx'
+  - 'Class Data Analytics'
+  - 'Class Forensics'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Alteryx
+  - RegEx
 ---
 
 This case asks students perform select cybersecurity audit procedures on actual Enron Corporation emails (approximately 27,000), preserved by federal investigators, to look for employee violations of hypothetical company policies. The case is offered in Alteryx, which is a powerful tool for both ETL and data analytics. Alteryx allows for a powerful examination of 100% of the emails and reduces the time and potential errors associated with an analysis of this magnitude. We provide instructions to obtain free academic licensing for you and your students. The case is accompanied with how-to videos.

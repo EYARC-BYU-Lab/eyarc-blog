@@ -3,11 +3,12 @@ layout: post
 title: 'Peach State University Hotel case series (EY Helix General Ledger Analyzer for Students) Forensics case'
 date: 2024-10-30
 published: true
-tags:
+tag_class:
   - 'Class Audit'
-  - 'Level Intermediate'
   - 'Class Data Analytics'
   - 'Class Forensics'
+tag_level:
+  - 'Level Intermediate'
 ---
 
 EY has developed a leading-class analytics platform, EY Helix, for use by its Assurance practice to leverage analytics techniques and technologies to bring more improvements and quality to each audit. EY Helix is a proprietary tool and not available for the classroom. However, the EYARC has developed EY Helix General Ledger Analyzer for students, a simplified tool based on elements of EY Helix designed specifically for the classroom and using Tableau Desktop software. The tool helps students simulate real-world audit analytics procedures by using similar data, analyses and tools used by professional auditors.

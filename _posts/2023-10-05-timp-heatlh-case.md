@@ -3,12 +3,14 @@ layout: post
 title: 'Timp Health Case'
 date: 2023-10-05
 published: true
-tags:
+tag_class:
   - 'Class Data Analytics'
-  - 'Level Intermediate'
-  - 'Level Advanced'
   - 'Class Managerial'
-  - 'R'
+tag_level:
+  - 'Level Advanced'
+  - 'Level Intermediate'
+tag_tools:
+  - R
 ---
 
 This case asks students to assume the role of an analyst within Timp Health, a company that specializes in pharmacy benefit management. The task is to analyze drivers of gross drug costs and, ultimately, to develop a regression model that best predicts future gross drug costs. The real-world data for this case includes gross drug costs, along with other data fields, at both member and record detail levels. We provide solutions using the statistical program R.

@@ -3,9 +3,10 @@ layout: post
 title: 'Property, Plant and Equipment Impairment Case'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Professional Judgment'
+tag_level:
+  - 'Level Beginner'
 ---
 
 A scenario where the student assumes the role of a junior accountant for Toyda, a car manufacturer, and must make a judgment about the need to impair its production facilities.

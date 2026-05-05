@@ -3,14 +3,15 @@ layout: post
 title: 'Tech Explorer Case'
 date: 2023-10-05
 published: true
-tags:
-  - 'Class Audit'
-  - 'Level Intermediate'
-  - 'Class Tax'
+tag_class:
   - 'Class AIS'
+  - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Level Beginner'
   - 'Class Managerial'
+  - 'Class Tax'
+tag_level:
+  - 'Level Beginner'
+  - 'Level Intermediate'
 ---
 
 This case asks students to research emerging data and technology topics to gain understanding of the topics and to determine any potential impact on the accounting profession. Students document and present their research and are graded by their peers using a provided rubric. A list of possible topics, research websites and publications are provided for faculty consideration.

@@ -3,10 +3,11 @@ layout: post
 title: 'EYARC Experience: Performing Walkthroughs'
 date: 2025-11-18
 published: true
-tags:
-  - 'Class Audit'
-  - 'Level Intermediate'
+tag_class:
   - 'Class AIS'
+  - 'Class Audit'
+tag_level:
+  - 'Level Intermediate'
 ---
 
 In this assignment, you will learn about the role of walkthroughs in an audit. We will focus on walkthroughs of the purchasing cycle, although principles learned in this assignment are applicable to other business cycles. Through informative content and interactive activities, you will explore the planning, execution, and documentation processes that are crucial to walkthroughs.

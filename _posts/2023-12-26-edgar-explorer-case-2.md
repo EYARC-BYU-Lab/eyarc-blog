@@ -3,13 +3,15 @@ layout: post
 title: 'EDGAR Explorer Case 2'
 date: 2023-12-26
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class Financial'
-  - 'Level Intermediate'
+tag_class:
   - 'Class AIS'
+  - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Alteryx'
+  - 'Class Financial'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Alteryx
 ---
 
 This case is Part 2 of a case series that provides an opportunity for students to explore XBRL data from the Security and Exchange Commission’s (SEC) Electronic Data Gathering, Analysis, and Retrieval (EDGAR) system. This case provides an opportunity for students to explore Inline XBRL data from the Securities and Exchange Commission’s (SEC) Electronic Data Gathering, Analysis, and Retrieval (EDGAR) system. Tesla is used as the example company for exploration.

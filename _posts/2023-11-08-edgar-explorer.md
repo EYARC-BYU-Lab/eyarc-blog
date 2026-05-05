@@ -3,12 +3,13 @@ layout: post
 title: 'EDGAR Explorer'
 date: 2023-11-08
 published: true
-tags:
-  - 'Class Financial'
-  - 'Level Intermediate'
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+  - 'Class Financial'
+tag_level:
   - 'Level Beginner'
+  - 'Level Intermediate'
 ---
 
 This case provides an opportunity for students to explore Inline XBRL data from the Securities and Exchange Commission’s (SEC) Electronic Data Gathering, Analysis, and Retrieval (EDGAR) system. Tesla is used as the example company for exploration.

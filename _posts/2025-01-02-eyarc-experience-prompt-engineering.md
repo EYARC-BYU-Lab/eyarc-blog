@@ -3,13 +3,15 @@ layout: post
 title: 'EYARC Experience: Prompt Engineering'
 date: 2025-01-02
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'ChatGPT'
-  - 'GenAI'
-  - 'Artificial Intelligence'
+tag_tools:
+  - AI
+  - ChatGPT
+  - GenAI
 ---
 
 In this assignment, you will learn about the emerging field of prompt engineering within the accounting discipline, focusing on how advanced AI tools such as large language models can be harnessed to automate and enhance accounting processes. You will learn to craft effective prompts, work with AI to analyze financial data, and assess the outputs for relevance and accuracy. Throughout the assignment, you will engage with the theory and practice of using AI to automate data entry, derive insights, and improve stakeholder communication in accounting settings.

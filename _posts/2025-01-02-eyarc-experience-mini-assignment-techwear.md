@@ -3,10 +3,12 @@ layout: post
 title: 'EYARC Experience: Mini Assignment: TechWear'
 date: 2025-01-02
 published: true
-tags:
+tag_class:
   - 'Class Financial'
+tag_level:
   - 'Level Beginner'
-  - 'Excel'
+tag_tools:
+  - Excel
 ---
 
 In this assignment, you will take on the role of a co-founder of TechWear, a startup specializing in high-tech sportswear. You will assess the company's accounts receivable collectability risk using various financial reports prepared by your accounting team. By analyzing sales, cash receipts, days sales outstanding (DSO), and accounts receivable aging, you will identify trends and potential risks in TechWear's financial health, and make recommendations to improve cash flow and manage credit risk.

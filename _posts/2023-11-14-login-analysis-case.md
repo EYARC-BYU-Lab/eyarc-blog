@@ -3,13 +3,15 @@ layout: post
 title: 'Cybersecurity: Login Analysis Case'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Intermediate'
+tag_class:
   - 'Class AIS'
-  - 'Class Data Analytics'
-  - 'Alteryx'
-  - 'Class Forensics'
   - 'Class Cybersecurity'
+  - 'Class Data Analytics'
+  - 'Class Forensics'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Alteryx
 ---
 
 For this case, the students will perform tests related to employee authentication logins. Students are asked to analyze data to determine the average number of employee logins, if logins are missing from the authentication log, if terminated employees are still attempting to login, etc. The last problem asks students to review logins by location and determine the distance between login attempts.

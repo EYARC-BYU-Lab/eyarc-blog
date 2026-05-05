@@ -3,17 +3,18 @@ layout: post
 title: 'Data Analytics Master Case Guide'
 date: 2025-05-07
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class Financial'
-  - 'Level Intermediate'
-  - 'Class Tax'
-  - 'Class Business'
+tag_class:
   - 'Class AIS'
+  - 'Class Audit'
+  - 'Class Business'
   - 'Class Data Analytics'
-  - 'Level Beginner'
-  - 'Class Sustainability'
+  - 'Class Financial'
   - 'Class Managerial'
+  - 'Class Sustainability'
+  - 'Class Tax'
+tag_level:
+  - 'Level Beginner'
+  - 'Level Intermediate'
 ---
 
 **Description**: All cases are designed to help students develop their [analytics mindset]({{ '/blog/introduction-to-the-analytics-mindset/' | relative_url }}); however, some of these cases have differing levels of coverage for each component of the analytics mindset. This guide provides a listing of all cases with mapping to suitable courses and competencies for consideration to help assess if the case will meet your learning objectives.

@@ -3,9 +3,10 @@ layout: post
 title: 'EYARC Analytics Mindset Master Guide'
 date: 2025-06-19
 published: true
-tags:
-  - 'Level Beginner'
+tag_class:
   - 'Class Data Analytics'
+tag_level:
+  - 'Level Beginner'
 ---
 
 Description: All cases are designed to help students develop their analytics mindset; however, some of these cases have differing levels of coverage for each component of the analytics mindset. Additionally, because of different subject matter, some cases would integrate well in some classes but not others. This guide provides a listing of all cases with mapping to suitable courses for consideration and also to competencies identified in the Analytics Mindset Competency Framework to help assess if the case will meet your learning objectives. 

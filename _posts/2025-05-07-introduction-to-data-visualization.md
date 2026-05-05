@@ -3,13 +3,16 @@ layout: post
 title: 'Introduction to Data Visualization'
 date: 2025-05-07
 published: true
-tags:
+tag_topic:
+  - Visualization
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'Tableau'
-  - 'PowerBI'
-  - 'Visualization'
+tag_tools:
+  - PowerBI
+  - Tableau
 ---
 
 **Description**: Data visualization can be described as blending the art of design with the science of data. It’s about communicating data primarily through imagery to reveal the best insights in the most compelling way to varied users.

@@ -3,8 +3,9 @@ layout: post
 title: 'EYARC Analytics Mindset Framework'
 date: 2025-06-19
 published: true
-tags:
+tag_class:
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
 ---
 

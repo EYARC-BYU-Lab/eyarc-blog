@@ -3,11 +3,13 @@ layout: post
 title: 'Cash-based budgets'
 date: 2025-09-02
 published: true
-tags:
+tag_class:
   - 'Class Personal Finance'
   - 'Class Tax'
+tag_level:
   - 'Level Beginner'
-  - 'Excel'
+tag_tools:
+  - Excel
 ---
 
 Cash-based budgeting is the first case in our financial literacy personal budget series. The case aims to help students understand personal financial decisions and retirement savings. This case consists of 11 parts, each designed to build foundational concepts and Excel skills necessary for effective budgeting. 

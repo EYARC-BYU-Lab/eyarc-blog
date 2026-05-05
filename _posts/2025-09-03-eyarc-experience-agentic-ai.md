@@ -3,12 +3,14 @@ layout: post
 title: 'EYARC Experience: Agentic AI'
 date: 2025-09-03
 published: true
-tags:
-  - 'Level Intermediate'
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
-  - 'AI'
-  - 'GenAI'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - AI
+  - GenAI
 ---
 
 In this assignment, students will explore the concept of AI agents. They will learn that while AI agents are not a new concept, they have attracted renewed attention with the emergence of large language models (LLMs). Students will then be introduced to multi-agent systems, in which multiple AI agents collaborate or interact. The assignment will highlight both the advantages and challenges associated with designing and implementing such systems.

@@ -3,11 +3,14 @@ layout: post
 title: 'EYARC Experience: Mini Assignment: Case of the Missing 4'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Dashboards
+tag_class:
   - 'Class Financial'
+tag_level:
   - 'Level Beginner'
-  - 'Dashboards'
-  - 'Tableau'
+tag_tools:
+  - Tableau
 ---
 
 In this assignment, you will take on the role of a regulatory analyst for the Securities and Exchange Commission (SEC), investigating potential manipulation of earnings per share (EPS) by public companies. By analyzing financial data and using dashboard visualizations, you will determine if companies are strategically rounding up EPS to meet or beat market expectations. This analysis will help identify trends in financial reporting and assess the implications for regulatory oversight and market integrity.

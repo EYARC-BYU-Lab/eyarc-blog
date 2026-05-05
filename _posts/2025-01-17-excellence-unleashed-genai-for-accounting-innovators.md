@@ -3,13 +3,15 @@ layout: post
 title: 'Excellence unleashed: GenAI for accounting innovators'
 date: 2025-01-17
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Intermediate'
-  - 'GenAI'
-  - 'Artificial Intelligence'
-  - 'ChatGPT'
+tag_tools:
+  - AI
+  - ChatGPT
+  - GenAI
 ---
 
 This project is designed for a course focused on the application of emerging technologies — specifically generative AI (GenAI) — within the accounting domain. The primary goal is for students to conceive, design and prototype a GenAI-enhanced solution that addresses a specific need or challenge in the accounting profession. The final deliverable may take various forms, such as an automated tool, a refined workflow or a decision support feature.

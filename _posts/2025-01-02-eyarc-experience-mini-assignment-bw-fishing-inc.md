@@ -3,11 +3,14 @@ layout: post
 title: 'EYARC Experience: Mini Assignment: BW Fishing Inc.'
 date: 2025-01-02
 published: true
-tags:
-  - 'Class Financial'
-  - 'Level Beginner'
+tag_topic:
   - 'Process Mining'
-  - 'Celonis'
+tag_class:
+  - 'Class Financial'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - Celonis
 ---
 
 In this assignment, you will take on the role of the Vice President of Finance and Accounting at BW Fishing Inc. (BWF), a company that sells fishing supplies primarily to businesses. The focus will be on using process mining techniques to analyze and understand the company's increasing uncollectible accounts receivable. By examining dashboards that visualize revenue transaction flows, you will identify trends and issues within the revenue cycle, ultimately providing recommendations to improve the company's financial health.

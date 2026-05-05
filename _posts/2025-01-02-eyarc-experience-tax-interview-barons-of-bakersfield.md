@@ -3,10 +3,12 @@ layout: post
 title: 'EYARC Experience: Tax Interview: Barons of Bakersfield'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Interviewing
+tag_class:
   - 'Class Tax'
+tag_level:
   - 'Level Intermediate'
-  - 'Interviewing'
 ---
 
 In this assignment, you will help a client complete their 20XX tax returns, focusing on the Child Tax Credit (CTC), Other Dependent Credit (ODC), American Opportunity Tax Credit (AOTC), and Lifetime Learning Credit (LLC). After reviewing the client's financial details and the relevant tax code, you will participate in a live generative AI interview with the “client” to gather the remaining information needed to calculate their credits. This interview allows you to practice and receive personalized feedback on your interviewing soft skills and ability to gather essential tax information. Following the interview, you will take a short quiz to test your understanding of the tax credits discussed.

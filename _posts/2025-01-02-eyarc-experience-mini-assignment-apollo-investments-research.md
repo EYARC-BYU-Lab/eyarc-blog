@@ -3,11 +3,14 @@ layout: post
 title: 'EYARC Experience: Mini Assignment: Apollo Investments Research'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Dashboards
+tag_class:
   - 'Class Financial'
+tag_level:
   - 'Level Beginner'
-  - 'Dashboards'
-  - 'Tableau'
+tag_tools:
+  - Tableau
 ---
 
 In this assignment, you will explore the application of alternative data, such as satellite imagery, to forecast and analyze financial statements. As a financial analyst at Apollo Investments Research, you will evaluate the effectiveness of nanosatellite data in predicting same-store sales growth for major retail chains. This involves analyzing dashboard visualizations to determine the correlation between parking lot fill rates and sales performance, ultimately enhancing your investment research and recommendations.

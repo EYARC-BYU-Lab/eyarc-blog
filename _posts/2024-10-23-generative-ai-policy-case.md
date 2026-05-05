@@ -3,16 +3,18 @@ layout: post
 title: 'Generative AI policy case'
 date: 2024-10-23
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class AIS'
-  - 'Class Data Analytics'
-  - 'Level Beginner'
-  - 'Class Managerial'
+tag_topic:
   - 'Ethics Mindset'
-  - 'ChatGPT'
-  - 'AI'
-  - 'Artificial Intelligence'
+tag_class:
+  - 'Class AIS'
+  - 'Class Audit'
+  - 'Class Data Analytics'
+  - 'Class Managerial'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - AI
+  - ChatGPT
 ---
 
 Generative AI is reshaping every facet of business, causing great need for ethical leadership. This case helps equip students with the critical thinking skills and ethical frameworks necessary to navigate the ethical business complexities introduced by generative AI. 

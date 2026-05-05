@@ -3,10 +3,12 @@ layout: post
 title: 'EYARC Experience: Auditing Inventory: A Virtual Audit Experience Version 2'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Interviewing
+tag_class:
   - 'Class Audit'
+tag_level:
   - 'Level Beginner'
-  - 'Interviewing'
 ---
 
 Welcome to the Auditing Inventory: A Virtual Audit Experience Version 2 assignment. In this interactive simulation, you will assume the role of a staff auditor observing and participating in the physical inventory count at Lazer Laptop Corporation. Through real-world scenarios and hands-on tasks, you will practice critical auditing skills like performing test counts and assessing inventory condition. This assignment will provide a practical understanding of the inventory count process.

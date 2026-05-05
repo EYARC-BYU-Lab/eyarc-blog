@@ -3,12 +3,14 @@ layout: post
 title: 'Bryan'
 date: 2024-10-23
 published: true
-tags:
+tag_topic:
+  - Drones
+tag_class:
+  - 'Class AIS'
   - 'Class Audit'
   - 'Class Data Analytics'
-  - 'Class AIS'
+tag_level:
   - 'Level Intermediate'
-  - 'Drones'
 ---
 
 In this two-part case, students are asked to assume the role of a consultant for Bryan’s Amazing Animals (BAA), a sheep farm that owns approximately 3,000 sheep. In completing this case, students will learn more about the inventory process in general. They will also learn how drones and automated counting software, emerging technologies with a variety of business uses, can be effectively used to make inventory counting and auditing more efficient and effective. Prior to completing the case, it is recommended that you discuss with students about the importance of an innovation mindset. Students should have also have an understanding of the inventory process. See the user guide for course applicability and other considerations.

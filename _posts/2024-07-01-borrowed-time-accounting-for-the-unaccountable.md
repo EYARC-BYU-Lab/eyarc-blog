@@ -3,12 +3,13 @@ layout: post
 title: 'Borrowed time: Accounting for the unaccountable'
 date: 2024-07-01
 published: true
-tags:
+tag_class:
   - 'Class Audit'
-  - 'Class Financial'
-  - 'Level Intermediate'
-  - 'Class Tax'
   - 'Class Business'
+  - 'Class Financial'
+  - 'Class Tax'
+tag_level:
+  - 'Level Intermediate'
 ---
 
 The case provides a comprehensive and practical examination of the US federal government’s financial practices, challenges and reporting standards. By exploring the sustainability of the current fiscal path, students will engage in critical thinking about the US national debt, spending and the economic implications of policy decisions. This encourages them to think beyond the numbers and consider the broader economic context. The material covered by this case is information every US citizen should be aware of and care about.

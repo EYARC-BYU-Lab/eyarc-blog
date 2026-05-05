@@ -3,13 +3,16 @@ layout: post
 title: 'Process Mining Document the process case'
 date: 2024-07-01
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class AIS'
-  - 'Class Data Analytics'
-  - 'Level Beginner'
-  - 'Celonis'
+tag_topic:
   - 'Process Mining'
+tag_class:
+  - 'Class AIS'
+  - 'Class Audit'
+  - 'Class Data Analytics'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - Celonis
 ---
 
 In order to analyze a business process through process mining, it is important first to understand how the business process is designed. This case presents a narrative of an order-to-cash business process for a hypothetical company, BW Fishing Inc., and requires a student to make a flowchart of this process. The completed flowchart (solution to this case) and the narrative are included in the appendices of the subsequent cases for reference (and, in particular, for the scenario where you do not require your students to complete this case). Note that you can use any tool you prefer students use to prepare the flowchart. We have provided the solution built using Lucidchart but saved as a Microsoft Visio file type, which is captured in the Microsoft Word and Adobe files.

@@ -3,10 +3,12 @@ layout: post
 title: 'EYARC Experience: Basics of Audit Inquiry'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Interviewing
+tag_class:
   - 'Class Audit'
+tag_level:
   - 'Level Beginner'
-  - 'Interviewing'
 ---
 
 Welcome! In this assignment, we provide an overview of audit inquiry. You’ll practice with mini cases and explore real-world examples of the impact of audit inquiry. For future reference and study, at the end of the assignment there will be a pdf you can download that contains several of the tables and information contained.

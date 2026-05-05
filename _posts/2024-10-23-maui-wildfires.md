@@ -3,10 +3,10 @@ layout: post
 title: 'Maui wildfires'
 date: 2024-10-23
 published: true
-tags:
-  - 'Class Sustainability'
-  - 'Class Financial'
+tag_class:
   - 'Class Audit'
+  - 'Class Financial'
+  - 'Class Sustainability'
 ---
 
 Tailored for a financial, sustainability or audit course, this case has students explore the SEC’s Climate-Related Disclosure rule, which provides companies guidance around how to disclose climate-related risks that are reasonably likely to have a material impact on a company’s strategy, results of operations or financial position.

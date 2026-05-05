@@ -3,8 +3,9 @@ layout: post
 title: 'EYARC Experience: Auditing Inventory: A Virtual Audit Experience Version 1'
 date: 2025-01-02
 published: true
-tags:
+tag_class:
   - 'Class Audit'
+tag_level:
   - 'Level Beginner'
 ---
 

@@ -3,8 +3,9 @@ layout: post
 title: 'Auditor independence'
 date: 2024-04-06
 published: true
-tags:
+tag_class:
   - 'Class Audit'
+tag_level:
   - 'Level Intermediate'
 ---
 

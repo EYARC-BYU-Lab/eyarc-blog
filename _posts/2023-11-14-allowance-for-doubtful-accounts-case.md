@@ -3,9 +3,10 @@ layout: post
 title: 'Allowance for Doubtful Accounts Case'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Professional Judgment'
+tag_level:
+  - 'Level Beginner'
 ---
 
 A scenario where the student assumes the role of the controller for Wildcat Sporting Goods and must make a judgment about the allowance for doubtful accounts

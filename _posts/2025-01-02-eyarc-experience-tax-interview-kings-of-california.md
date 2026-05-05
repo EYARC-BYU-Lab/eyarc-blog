@@ -3,10 +3,12 @@ layout: post
 title: 'EYARC Experience: Tax Interview: Kings of California'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Interviewing
+tag_class:
   - 'Class Tax'
+tag_level:
   - 'Level Beginner'
-  - 'Interviewing'
 ---
 
 In this assignment, you will act as a tax professional helping a client complete their 20X1 tax returns, focusing on child and dependent tax credits. You will review the client's financial details and learn about the relevant tax code sections for the Child Tax Credit (CTC) and Other Dependent Credit (ODC). During the interview, you will gather detailed information to determine which credits the client qualifies for and how to maximize their benefits. You will also use important soft skills to ensure a productive and supportive interaction with the client. Following the interview, you will take a short quiz to test your understanding and application of the discussed tax credits.

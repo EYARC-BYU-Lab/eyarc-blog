@@ -3,9 +3,10 @@ layout: post
 title: 'Asset Expropriation Case'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Professional Judgment'
+tag_level:
+  - 'Level Beginner'
 ---
 
 A scenario where the student assumes the role of a junior accountant at Transcontinental Energy Company, an independently owned explorer and producer of oil and natural gas, and must make a judgment about recording a loss contingency regarding possible asset expropriation related to TEC’s assets in the country of Zing​

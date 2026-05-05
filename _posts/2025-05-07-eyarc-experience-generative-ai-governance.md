@@ -3,14 +3,15 @@ layout: post
 title: 'EYARC Experience: Generative AI Governance'
 date: 2025-05-07
 published: true
-tags:
-  - 'Class Business'
+tag_class:
   - 'Class AIS'
+  - 'Class Business'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'AI'
-  - 'GenAI'
-  - 'Artificial Intelligence'
+tag_tools:
+  - AI
+  - GenAI
 ---
 
 In this assignment, you will explore the risks associated with the emergence of generative AI (GenAI) and how to address these risks using the GenAI Governance Framework and Maturity Model available at [genai.global](https://genai.global/). This framework outlines procedures in five domains of AI management spanning operational, technological, human, ethical and social considerations. Applying the framework helps organizations improve how they govern their GenAI use. To learn these concepts, you will participate in a simulation where you will assume the role of an individual applying for the GenAI controller position at Voltix Tech Company. You will be interviewed by several different people to demonstrate your understanding of GenAI governance in real-world scenarios. Following this activity, you will finish the assignment with a final graded quiz.

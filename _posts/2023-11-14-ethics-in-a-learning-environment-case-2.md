@@ -3,9 +3,10 @@ layout: post
 title: 'Ethics in a Learning Environment Case 2'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Ethics Mindset'
+tag_level:
+  - 'Level Beginner'
 ---
 
 This case focuses on applying ethics in a learning environment in a professional setting (Part 2). In each part, students are asked to evaluate whether various behavior scenarios are ethical or unethical and provide support for their assessment based on the principles and techniques in the ethics mindset framework.

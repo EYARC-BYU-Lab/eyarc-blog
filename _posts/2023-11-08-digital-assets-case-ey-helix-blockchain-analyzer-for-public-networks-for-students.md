@@ -3,11 +3,13 @@ layout: post
 title: 'Digital Assets Case: EY Helix Blockchain Analyzer for Public Networks for Students'
 date: 2023-11-08
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Intermediate'
+tag_tools:
   - 'TIBCO Spotfire'
 ---
 

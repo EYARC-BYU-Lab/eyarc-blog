@@ -3,8 +3,9 @@ layout: post
 title: 'EYARC Experience: Inventory Counts: From Shelves to Statements'
 date: 2025-01-02
 published: true
-tags:
+tag_class:
   - 'Class Audit'
+tag_level:
   - 'Level Beginner'
 ---
 

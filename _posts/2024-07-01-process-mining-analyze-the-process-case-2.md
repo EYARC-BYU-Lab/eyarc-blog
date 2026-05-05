@@ -3,13 +3,16 @@ layout: post
 title: 'Process Mining Analyze the process case 2'
 date: 2024-07-01
 published: true
-tags:
-  - 'Class Audit'
-  - 'Class AIS'
-  - 'Class Data Analytics'
-  - 'Level Beginner'
-  - 'Celonis'
+tag_topic:
   - 'Process Mining'
+tag_class:
+  - 'Class AIS'
+  - 'Class Audit'
+  - 'Class Data Analytics'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - Celonis
 ---
 
 This case has students use the process mining dashboards provided to analyze the credit approval process within the order-to-cash cycle for BW Fishing Inc. Students must assume the role of the external auditor piloting the use of process mining in the planning phase of the audit in which both an audit opinion on internal controls and the financial statements is required.

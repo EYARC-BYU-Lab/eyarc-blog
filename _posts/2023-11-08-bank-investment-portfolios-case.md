@@ -3,11 +3,13 @@ layout: post
 title: 'Bank Investment Portfolios Case'
 date: 2023-11-08
 published: true
-tags:
-  - 'Class Financial'
-  - 'Level Intermediate'
+tag_class:
   - 'Class Data Analytics'
-  - 'Tableau'
+  - 'Class Financial'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Tableau
 ---
 
 In this case, students will learn more about the classification, measurement and recognition of debt investments; the economics and valuation of debt investments; and consider the influence of banking regulations (Basel III in the US) and reporting incentives on accounting judgments. 

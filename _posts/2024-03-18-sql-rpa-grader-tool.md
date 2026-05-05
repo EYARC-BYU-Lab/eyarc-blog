@@ -3,10 +3,11 @@ layout: post
 title: 'Teaching Tools: SQL RPA Grader tool'
 date: 2024-03-18
 published: true
-tags:
-  - 'SQL'
+tag_topic:
   - 'Teaching Tools'
-  - 'RPA'
+tag_tools:
+  - RPA
+  - SQL
 ---
 
 The development and validation of an automated grading tool using robotic process automation (RPA) for SQL queries saves faculty time and allows for more accurate grading. This enhances the accuracy of grading but also allows faculty to reallocate their time toward other important academic responsibilities, such as curriculum development, research and student engagement. 

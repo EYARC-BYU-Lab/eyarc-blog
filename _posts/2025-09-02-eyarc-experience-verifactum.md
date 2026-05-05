@@ -3,13 +3,15 @@ layout: post
 title: 'EYARC Experience: Verifactum'
 date: 2025-09-02
 published: true
-tags:
-  - 'Class Data Analytics'
-  - 'Level Beginner'
-  - 'Class Financial'
+tag_class:
   - 'Class Audit'
-  - 'ChatGPT'
-  - 'GenAI'
+  - 'Class Data Analytics'
+  - 'Class Financial'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - ChatGPT
+  - GenAI
 ---
 
 In this assignment, students will learn about deepfake technology and take on the role of an investment portfolio manager at Verifactum, Inc., a large hedge fund based in Washington, D.C. They will be tasked with assessing various market-moving events through social media alerts and make informed investment decisions. 

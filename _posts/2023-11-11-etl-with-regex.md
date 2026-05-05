@@ -3,11 +3,13 @@ layout: post
 title: 'ETL With RegEx'
 date: 2023-11-11
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Data Analytics'
+tag_level:
   - 'Level Intermediate'
-  - 'RegEx'
+tag_tools:
+  - RegEx
 ---
 
 This case is designed to have students use regular expressions (RegEx) to answer some basic questions about a small set of messy, unstructured customer data and then transform the data into a structured layout so it can be loaded into an application for analysis.

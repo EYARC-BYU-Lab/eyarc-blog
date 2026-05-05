@@ -3,14 +3,15 @@ layout: post
 title: 'RPA Travel expense audit case'
 date: 2024-03-13
 published: true
-tags:
-  - 'Class Audit'
-  - 'Level Intermediate'
+tag_class:
   - 'Class AIS'
+  - 'Class Audit'
   - 'Class Data Analytics'
-  - 'RPA'
-  - 'Robotic Process Automation'
-  - 'UiPath'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - RPA
+  - UiPath
 ---
 
 In this case, students gather data to perform an internal audit of travel expenses for Fairfield Inc. Employees have submitted trips for reimbursement that include the address from which the employee left, the address to where they traveled and the employee's self-reported mileage for the trip. Students will manually perform the task of mapping the distances using a commercial mapping service (Google Maps). Students will then write a bot that automates this process and then calculates the difference between the distance the bot collected and the employee self-reported distances.

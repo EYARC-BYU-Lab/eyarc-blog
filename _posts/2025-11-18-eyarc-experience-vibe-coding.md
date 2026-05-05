@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Vibe Coding'
 date: 2025-11-18
 published: true
-tags:
+tag_class:
   - 'Class Data Analytics'
+tag_level:
   - 'Level Beginner'
-  - 'AI'
-  - 'GenAI'
+tag_tools:
+  - AI
+  - GenAI
 ---
 
 In this assignment, you will explore a new way of coding called vibe coding — a method that uses generative AI (GenAI) powered tools to help you generate, test and deploy code based on natural language prompts.

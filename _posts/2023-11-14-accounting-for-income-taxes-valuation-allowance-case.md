@@ -3,9 +3,10 @@ layout: post
 title: 'Accounting for Income Taxes: Valuation Allowance Case'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Professional Judgment'
+tag_level:
+  - 'Level Beginner'
 ---
 
 A scenario where the student assumes the role of a junior accountant at Asbat, a leading pharmaceutical company, and must make a judgment about recording a valuation allowance against the deferred tax asset created by a net operating loss carryforward.

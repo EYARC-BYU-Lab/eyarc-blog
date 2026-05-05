@@ -3,11 +3,13 @@ layout: post
 title: 'Fraud Risk Assessment Case 2'
 date: 2023-11-14
 published: true
-tags:
-  - 'Class Audit'
-  - 'Level Beginner'
-  - 'Class Forensics'
+tag_topic:
   - 'Professional Judgment'
+tag_class:
+  - 'Class Audit'
+  - 'Class Forensics'
+tag_level:
+  - 'Level Beginner'
 ---
 
 This application scenario asks students to assume the role of an auditor and use their professional judgment to perform a fraud risk assessment as part of the audit planning process for Jameson Family Farms, a family-owned business that grows and sells peanuts. As a result of the assessment, students are then asked to modify select audit procedures to address the identified risk.

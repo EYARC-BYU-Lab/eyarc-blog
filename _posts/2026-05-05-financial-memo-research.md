@@ -3,9 +3,10 @@ layout: post
 title: Financial Memo - Research
 date: 2026-05-05
 published: true
-tags:
-  - Class Financial
-  - Level Advanced
+tag_class:
+  - 'Class Financial'
+tag_level:
+  - 'Level Advanced'
 ---
 In this assignment, you will navigate through an accounting research process to resolve complex financial reporting questions. You will use critical judgment and apply ethics to analyze business cases and determine appropriate accounting treatments. You will do this through guided activities that will help you practice defining clear research questions, using authoritative and secondary sources, and documenting well-reasoned conclusions. The topics in this assignment are intentionally simplified for learning purposes. Actual practice will include more nuance and require deeper evaluation.
 

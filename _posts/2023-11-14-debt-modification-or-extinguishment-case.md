@@ -3,9 +3,10 @@ layout: post
 title: 'Debt Modification or Extinguishment Case Part 1'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Professional Judgment'
+tag_level:
+  - 'Level Beginner'
 ---
 
 A scenario where the student assumes the role of the new controller of the Prescott Company, a commercial real estate developer, and must make a judgment about the potential refinancing of its mortgage loan.

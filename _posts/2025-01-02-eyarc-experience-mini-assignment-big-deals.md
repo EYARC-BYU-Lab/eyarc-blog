@@ -3,11 +3,14 @@ layout: post
 title: 'EYARC Experience: Mini Assignment: Big Deals'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Dashboards
+tag_class:
   - 'Class Financial'
+tag_level:
   - 'Level Beginner'
-  - 'Dashboards'
-  - 'Tableau'
+tag_tools:
+  - Tableau
 ---
 
 In this assignment, you will assume the role of an analyst for Big Deals (BD), a global big-box retailer experiencing a decline in global sales. You will use dashboard visualizations to analyze sales trends and market share across various product lines to provide insights and recommendations for improving the company's competitive position. This analysis will help you identify product lines with the sharpest revenue changes and market positions.

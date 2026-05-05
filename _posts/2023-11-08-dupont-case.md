@@ -3,14 +3,16 @@ layout: post
 title: 'DuPont Case'
 date: 2023-11-08
 published: true
-tags:
+tag_class:
   - 'Class AIS'
-  - 'Class Financial'
   - 'Class Data Analytics'
-  - 'Level Intermediate'
-  - 'Tableau'
+  - 'Class Financial'
+tag_level:
   - 'Level Beginner'
-  - 'R'
+  - 'Level Intermediate'
+tag_tools:
+  - R
+  - Tableau
 ---
 
 This case provides students a background on the DuPont Method and then requires students to analyze financial statement data for various companies across industries using this method to form investment recommendations. This case is offered in Tableau and R and is accompanied by how-to videos.

@@ -3,9 +3,10 @@ layout: post
 title: 'The Slippery Slope Case'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Ethics Mindset'
+tag_level:
+  - 'Level Beginner'
 ---
 
 This case has students focus on envisioning their future career as a business professional and related professional goals. Students are then asked to create two short stories that consider the consequences of making ethical (story 1) and unethical (story 2) choices now as a student on their professional goals. Students are asked to identify the “slippery slope” in their unethical behavior story and “how slippery” their slope was to realize that even small unethical actions can have significant consequences. Students are also asked to assess their ethics mindset vulnerabilities, as well as make commitments to address these vulnerabilities. Students are also expected to make commitments to further develop their own ethics mindset and the ethics mindset of others.

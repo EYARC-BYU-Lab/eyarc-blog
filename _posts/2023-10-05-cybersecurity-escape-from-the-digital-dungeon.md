@@ -3,14 +3,16 @@ layout: post
 title: 'Cybersecurity Escape from the Digital Dungeon'
 date: 2023-10-05
 published: true
-tags:
+tag_class:
   - 'Class AIS'
   - 'Class Audit'
-  - 'Class Data Analytics'
-  - 'Level Intermediate'
-  - 'Alteryx'
-  - 'Class Forensics'
   - 'Class Cybersecurity'
+  - 'Class Data Analytics'
+  - 'Class Forensics'
+tag_level:
+  - 'Level Intermediate'
+tag_tools:
+  - Alteryx
 ---
 
 For the purposes of this case, an organization has been hacked and received an email containing a riddle that needs to be solved within the hour. If the organization fails to solve the riddle, the hacker is threatening to release all of the organization’s sales data. The hacker typically enters systems through old software versions with vulnerabilities. Students need to use the provided data sets to find outdated software versions, then use JSON sales files to discover the hacker’s secret code. Once solved, they enter the code into a website to obtain a secret password.

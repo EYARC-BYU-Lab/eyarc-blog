@@ -3,11 +3,14 @@ layout: post
 title: 'EYARC Experience: Mini Assignment: DuPont Analysis - Modern Dovetail, Inc.'
 date: 2025-01-02
 published: true
-tags:
+tag_topic:
+  - Dashboards
+tag_class:
   - 'Class Financial'
+tag_level:
   - 'Level Beginner'
-  - 'Tableau'
-  - 'Dashboards'
+tag_tools:
+  - Tableau
 ---
 
 In this assignment, you will conduct a DuPont analysis for Modern Dovetail Inc., a midsize private furniture company, and compare its financial performance with the broader market and specific industry peers. By decomposing return on equity (ROE) into its components—net profit margin, asset turnover, and leverage ratio—you will assess the company's financial strength and identify trends over time. This analysis will inform discussions about a potential initial public offering (IPO) and provide insights into Modern Dovetail's competitive position.

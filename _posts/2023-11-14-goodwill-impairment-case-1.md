@@ -3,9 +3,10 @@ layout: post
 title: 'Goodwill Impairment Case 1'
 date: 2023-11-14
 published: true
-tags:
-  - 'Level Beginner'
+tag_topic:
   - 'Professional Judgment'
+tag_level:
+  - 'Level Beginner'
 ---
 
 A scenario where the student assumes the role of the controller for AKS, a consumer electronics company, and must make a judgment to determine possible goodwill impairment using a qualitative assessment over a multi-year period.

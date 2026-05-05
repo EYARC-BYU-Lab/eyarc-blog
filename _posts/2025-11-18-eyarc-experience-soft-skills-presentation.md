@@ -3,10 +3,12 @@ layout: post
 title: 'EYARC Experience: Soft Skills Presentation'
 date: 2025-11-18
 published: true
-tags:
-  - 'Level Beginner'
-  - 'Class Business'
+tag_topic:
   - 'Soft Skills'
+tag_class:
+  - 'Class Business'
+tag_level:
+  - 'Level Beginner'
 ---
 
 This assignment covers how to prepare for a presentation, use effective body language and verbal delivery, and leave your audience with a memorable message.

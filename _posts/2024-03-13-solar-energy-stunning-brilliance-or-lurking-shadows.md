@@ -3,11 +3,12 @@ layout: post
 title: 'Solar energy: Stunning brilliance or lurking shadows'
 date: 2024-03-13
 published: true
-tags:
-  - 'Class Sustainability'
-  - 'Level Beginner'
-  - 'Class Financial'
+tag_class:
   - 'Class Audit'
+  - 'Class Financial'
+  - 'Class Sustainability'
+tag_level:
+  - 'Level Beginner'
 ---
 
 Tailored for sustainability, business or accounting courses, this three-part case delves into the sustainability aspects of solar energy manufacturing. Students employ large language model (LLM) AI tools, research, critical thinking and professional skepticism throughout the case.

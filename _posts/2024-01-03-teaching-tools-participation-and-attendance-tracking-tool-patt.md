@@ -3,9 +3,10 @@ layout: post
 title: 'Teaching Tools: Participation and attendance tracking tool (PATT)'
 date: 2024-01-03
 published: true
-tags:
-  - 'Excel'
+tag_topic:
   - 'Teaching Tools'
+tag_tools:
+  - Excel
 ---
 
 The PATT tool supports educators in their record-keeping of both in-class participation and attendance. Using this tool will help to make end-of-term grading simpler and more fact-driven. The tool may also help teachers recall students’ names better and help in the facilitation of “cold-calling” students for participation without bias. The provided user guide will guide you through the setup and various uses of the Participation and Attendance Tracking Tool (PATT), which includes:

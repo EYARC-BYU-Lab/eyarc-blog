@@ -3,11 +3,13 @@ layout: post
 title: 'EYARC Experience: Becoming with AI'
 date: 2026-01-03
 published: true
-tags:
-  - 'Level Beginner'
+tag_class:
   - 'Class Data Analytics'
-  - 'AI'
-  - 'GenAI'
+tag_level:
+  - 'Level Beginner'
+tag_tools:
+  - AI
+  - GenAI
 ---
 
 In this assignment, you will examine two mindsets for engaging with artificial intelligence (AI): the passive, transactional mindset, and the active, transformational mindset. The assignment provides a framework for understanding how to move beyond simply using AI as a shortcut and instead create a mindset that fosters personal and professional growth. You will learn to use AI as a collaborative partner that expands your thinking and creative capabilities. 

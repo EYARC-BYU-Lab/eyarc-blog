@@ -3,10 +3,12 @@ layout: post
 title: 'EYARC Experience: Soft Skills Feedback'
 date: 2025-11-18
 published: true
-tags:
-  - 'Class Business'
-  - 'Level Beginner'
+tag_topic:
   - 'Soft Skills'
+tag_class:
+  - 'Class Business'
+tag_level:
+  - 'Level Beginner'
 ---
 
 Have you ever struggled with giving or receiving feedback in the workplace? This assignment draws on the professional EY standards for giving and receiving feedback, including guidance from the EY LEAD feedback framework. You’ll build practical skills to communicate feedback clearly, professionally, and constructively. Successful feedback conversations begin with having an open mindset and can be shaped by delivering the feedback in the appropriate method, time, and tone. You’ll learn how feedback dynamics shift depending on whether you are speaking to a peer, supervisor, or a direct report — and how to receive feedback with openness and curiosity. After this assignment, you’ll be ready to turn uncomfortable moments into productive conversations that support growth and collaboration.

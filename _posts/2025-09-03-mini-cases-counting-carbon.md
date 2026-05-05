@@ -3,11 +3,14 @@ layout: post
 title: 'Mini Cases: Counting Carbon'
 date: 2025-09-03
 published: true
-tags:
+tag_topic:
+  - Dashboards
+tag_class:
   - 'Class Financial'
+tag_level:
   - 'Level Beginner'
-  - 'Tableau'
-  - 'Dashboards'
+tag_tools:
+  - Tableau
 ---
 
 This case helps students grasp the broader significance of accounting by exploring why accurate reporting and independent assurance matter — not just for financial data, but for sustainability disclosures as well. In Mini Case 1, students step into the role of consultants at GreenLedger, an assurance firm using satellite-based emissions data from Climate TRACE to provide assurance on a company’s greenhouse gas (GHG) disclosures. Students see how accounting principles extend beyond traditional financial statements to support transparency, investor trust and informed decision-making in emerging areas like climate reporting. The case highlights the growing importance of assurance in sustainability and the role of technology and independent data in enhancing accountability.
