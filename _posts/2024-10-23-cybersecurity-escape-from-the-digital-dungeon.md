@@ -21,6 +21,6 @@ The case can be implemented in class, as homework, as a student project or as pa
 
 [Go to this website](https://eyarc.site/cyber/) to submit your final answers.
 
-**Suitable courses: ** This case is suitable for a cybersecurity, AIS, auditing (external or internal), forensics, or data analytics course 
+**Suitable courses:** This case is suitable for a cybersecurity, AIS, auditing (external or internal), forensics, or data analytics course 
 
 [**Link to download files (requires login)**](https://eyus.sharepoint.com/sites/EYARC/EYARC/Forms/AllItems.aspx?csf=1&web=1&e=yPGedH&cid=7e9e20ee%2Daeca%2D44f3%2Db212%2D2b51884e7798&RootFolder=%2Fsites%2FEYARC%2FEYARC%2FCybersecurity%2FCase%20studies%2FEscape%20from%20the%20Digital%20Dungeon&FolderCTID=0x012000B2E36F818B78F64AAB7991B5401A29D3)

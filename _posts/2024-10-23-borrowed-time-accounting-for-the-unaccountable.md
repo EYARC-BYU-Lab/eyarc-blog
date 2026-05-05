@@ -19,6 +19,6 @@ Students are challenged to consider the complexity of the US federal government 
 
 Care has been taken to draft this case in a nonpartisan manner.
 
-**Suitable courses: ** This case is suitable for a business, financial, audit, or tax course
+**Suitable courses:** This case is suitable for a business, financial, audit, or tax course
 
 [**Link to download files (requires login)**](https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Financial%20literacy/Borrowed%20time_Accounting%20for%20the%20unaccountable%20(US%20federal%20government)?csf=1&web=1&e=yQ1Zba)
