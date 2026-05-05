@@ -12,9 +12,9 @@
         <section class="container grid-lg">
           <div style="padding-top: 5rem;">
             <nav id="breadcrumbs">
-              <ul>
-                <li><a href="{{ '/' | relative_url }}">Blog</a></li>
-                <li>{{ page.title }}</li>
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li class="breadcrumb-item">{{ page.title }}</li>
               </ul>
             </nav>
           </div>
@@ -26,7 +26,7 @@
       <section id="body-wrapper" class="section">
         <section class="container grid-lg">
           <div class="columns">
-            <div id="item" class="column col-9 col-md-12 extra-spacing">
+            <div id="item" class="column col-12 extra-spacing">
               <div class="content-item h-entry">
                 <div class="content-title">
                   <h2 class="p-name">{{ page.title }}</h2>
@@ -60,9 +60,6 @@
                   {% endif %}
                 </div>
               </div>
-            </div>
-            <div id="sidebar" class="column col-3 col-md-12">
-              {% include sidebar.html %}
             </div>
           </div>
         </section>
