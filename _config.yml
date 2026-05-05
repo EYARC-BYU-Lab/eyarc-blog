@@ -8,13 +8,10 @@ author:
 timezone: America/Denver
 future: true
 permalink: /:title/
-paginate: 12
-paginate_path: "/page/:num/"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-redirect-from
 google_analytics: G-ZJ21NDWLQE
 feed:

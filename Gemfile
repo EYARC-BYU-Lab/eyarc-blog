@@ -4,7 +4,6 @@ gem "jekyll", "~> 4.3"
 gem "jekyll-feed", "~> 0.17"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
-gem "jekyll-paginate"
 gem "jekyll-redirect-from"
 
 group :jekyll_plugins do

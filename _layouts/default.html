@@ -3,11 +3,21 @@
 <head>
   {% include head.html %}
 </head>
-<body>
-  {% include header.html %}
-  <main>
-    {{ content }}
-  </main>
+<body id="top" class="header-fixed header-animated header-dark header-transparent sticky-footer">
+  <div id="page-wrapper">
+    {% include header.html %}
+    <section id="start">
+      <section id="body-wrapper" class="section">
+        <section class="container grid-lg">
+          {{ content }}
+        </section>
+      </section>
+    </section>
+  </div>
   {% include footer.html %}
+  {% include mobile-nav.html %}
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="{{ '/assets/vendor/js/jquery.treemenu.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/js/site.js' | relative_url }}"></script>
 </body>
 </html>

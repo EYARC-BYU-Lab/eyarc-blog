@@ -1,140 +1,186 @@
----
-layout: default
----
-<section id="hero" class="hero hero--home">
-  <div class="hero-inner">
-    <h1>EY Academic Resource Center</h1>
-    <p class="hero-sub">EYARC materials are provided free to academics.<br>Join us for leading-edge content.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body id="top" class="header-fixed header-animated header-dark header-transparent sticky-footer homepage">
+  <div id="page-wrapper">
+    {% include header.html %}
+
+    <section id="blog-hero" class="section modular-hero hero text-light overlay-dark-gradient hero-tiny parallax"
+      style="background-image: url('{{ '/assets/images/bg.png' | relative_url }}'); background-size: cover; background-position: center;">
+      <div class="hero-content" style="display: flex; align-items: center;">
+        <div class="video-container" style="flex: 1; padding-right: 3rem; padding-top: 5rem;">
+          <iframe
+            src="https://www.youtube.com/embed/zj60HUioTmo?si=4CCdS59ZkPl5eJCE"
+            style="width: 100%; height: 330px; border: none;"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="text-container" style="flex: 1;">
+          <section class="container grid-lg" style="text-align: left; padding-top: 6rem;">
+            <h2>EY<br>Academic Resource Center</h2>
+            <h5>EYARC materials are provided for free to academics.</h5>
+            <h5>Join us for leading-edge content.</h5>
+            <a href="https://www.ey.com/en_us/about-us/ey-foundation-and-university-relations/academic-resource-center"
+               class="custom-button-yellow">Join EYARC for Full Access</a>
+          </section>
+        </div>
+      </div>
+
+      <div class="custom-section">
+        <div class="custom-card">
+          <img src="{{ '/assets/images/classroom.jpg' | relative_url }}" alt="EYARC Experience Image">
+          <div class="custom-content">
+            <h2>EYARC Experience</h2>
+            <p>Turn case studies into powerful teaching moments for your students. Active EYARC users can explore our experiential learning platform to access cutting-edge curricula and innovative teaching resources.</p>
+            <a href="https://experience.eyarc.site/" class="custom-button-black">Try It Now</a>
+          </div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-content">
+            <h2>Academic Case Materials</h2>
+            <p>Access free resources to prepare students for the global marketplace. Resources include case studies, data sets, analytics workbooks, videos and many other tools focused on business and accounting topics.</p>
+            <button id="to-start" class="custom-button-black">Get Started</button>
+          </div>
+          <img src="{{ '/assets/images/desk.jpg' | relative_url }}" alt="Academic Case Materials Image">
+        </div>
+      </div>
+    </section>
+
+    <section id="start">
+      <section id="body-wrapper" class="section blog-listing">
+        <section class="container grid-lg">
+          <div class="columns">
+            <div id="item" class="column col-9 col-md-12 extra-spacing">
+              <div id="posts-grid" class="bricklayer">
+                {% for post in site.posts %}
+                  {% include post-card.html post=post %}
+                {% endfor %}
+              </div>
+
+              <div id="load-more-wrapper" style="text-align:center; margin-top:2rem;">
+                <button id="load-more-btn" class="btn btn-primary">Load more posts</button>
+              </div>
+
+              <div id="no-results" style="display:none; text-align:center; padding:3rem; color:#999;">
+                No posts match the selected filters.
+              </div>
+            </div>
+
+            <div id="sidebar" class="column col-3 col-md-12">
+              {% include sidebar.html %}
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
   </div>
-</section>
+  {% include footer.html %}
+  {% include mobile-nav.html %}
 
-<section id="blog-main" class="blog-main">
-  <div class="blog-container">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="{{ '/assets/vendor/js/jquery.treemenu.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/js/bricklayer.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/js/scopedQuerySelectorShim.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/js/site.js' | relative_url }}"></script>
+  <script>
+  (function($) {
+    var BATCH = 12;
+    var $cards = $('.card[data-tags]');
+    var activeFilters = {};
+    var visibleCount = 0;
 
-    {% include sidebar.html %}
-
-    <div id="posts-area">
-      <div id="posts-grid">
-        {% for post in site.posts %}
-          {% include post-card.html post=post %}
-        {% endfor %}
-      </div>
-
-      <div id="load-more-wrapper" class="load-more-wrapper">
-        <button id="load-more-btn" class="btn-load-more">Load more posts</button>
-      </div>
-
-      <div id="no-results" class="no-results" style="display:none">
-        <p>No posts match the selected filters.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<script>
-(function() {
-  var BATCH = 12;
-  var cards = Array.from(document.querySelectorAll('.post-card'));
-  var activeFilters = new Set();
-  var visibleCount = 0;
-
-  function matchesFilters(card) {
-    if (activeFilters.size === 0) return true;
-    var tags = card.dataset.tags ? card.dataset.tags.split('|') : [];
-    return Array.from(activeFilters).every(function(f) {
-      return tags.indexOf(f) !== -1;
-    });
-  }
-
-  function applyFilters() {
-    var matching = cards.filter(matchesFilters);
-    var nonMatching = cards.filter(function(c) { return !matchesFilters(c); });
-
-    // hide all non-matching
-    nonMatching.forEach(function(c) { c.style.display = 'none'; });
-
-    // show first BATCH matching, hide the rest
-    matching.forEach(function(c, i) {
-      c.style.display = i < BATCH ? '' : 'none';
-    });
-    visibleCount = Math.min(BATCH, matching.length);
-
-    var loadBtn = document.getElementById('load-more-btn');
-    var loadWrap = document.getElementById('load-more-wrapper');
-    var noResults = document.getElementById('no-results');
-    var infoBlock = document.getElementById('sidebar-results-info');
-    var countEl = document.getElementById('results-count');
-
-    if (matching.length === 0) {
-      noResults.style.display = '';
-      loadWrap.style.display = 'none';
-    } else {
-      noResults.style.display = 'none';
-      loadWrap.style.display = matching.length > BATCH ? '' : 'none';
+    function matchesFilters(card) {
+      var tags = ($(card).data('tags') || '').split('|');
+      return Object.keys(activeFilters).every(function(f) {
+        return tags.indexOf(f) !== -1;
+      });
     }
 
-    if (activeFilters.size > 0) {
-      infoBlock.style.display = '';
-      countEl.textContent = matching.length + ' post' + (matching.length !== 1 ? 's' : '') + ' found';
-    } else {
-      infoBlock.style.display = 'none';
-    }
-  }
+    function applyFilters() {
+      var $matching = $cards.filter(function() { return matchesFilters(this); });
+      var $nonMatching = $cards.not($matching);
 
-  function loadMore() {
-    var matching = cards.filter(matchesFilters);
-    var nextBatch = matching.slice(visibleCount, visibleCount + BATCH);
-    nextBatch.forEach(function(c) { c.style.display = ''; });
-    visibleCount += nextBatch.length;
-    if (visibleCount >= matching.length) {
-      document.getElementById('load-more-wrapper').style.display = 'none';
-    }
-  }
+      $nonMatching.hide();
+      $matching.each(function(i) {
+        $(this).toggle(i < BATCH);
+      });
+      visibleCount = Math.min(BATCH, $matching.length);
 
-  // init: show first batch, hide rest
-  applyFilters();
-
-  // filter checkboxes
-  document.querySelectorAll('.filter-cb').forEach(function(cb) {
-    cb.addEventListener('change', function() {
-      var tag = this.dataset.tag;
-      if (this.checked) {
-        activeFilters.add(tag);
-      } else {
-        activeFilters.delete(tag);
+      var hasFilters = Object.keys(activeFilters).length > 0;
+      $('#sidebar-results-info').toggle(hasFilters);
+      if (hasFilters) {
+        $('#results-count').text($matching.length + ' post' + ($matching.length !== 1 ? 's' : '') + ' found');
       }
-      applyFilters();
+      $('#load-more-wrapper').toggle($matching.length > BATCH);
+      $('#no-results').toggle($matching.length === 0);
+
+      // Re-init bricklayer after show/hide
+      if (window.bricklayerInstance) {
+        try { window.bricklayerInstance.redraw(); } catch(e) {}
+      }
+    }
+
+    // Init bricklayer
+    $(document).ready(function() {
+      var el = document.querySelector('.bricklayer');
+      if (el) {
+        window.bricklayerInstance = new Bricklayer(el);
+      }
+
+      // Show first batch
+      $cards.each(function(i) { $(this).toggle(i < BATCH); });
+      visibleCount = Math.min(BATCH, $cards.length);
+      $('#load-more-wrapper').toggle($cards.length > BATCH);
+
+      // Filter checkboxes
+      $('.filter-cb').on('change', function() {
+        var tag = $(this).data('tag');
+        if (this.checked) {
+          activeFilters[tag] = true;
+        } else {
+          delete activeFilters[tag];
+        }
+        applyFilters();
+      });
+
+      // Clear filters
+      $('#clear-filters').on('click', function() {
+        activeFilters = {};
+        $('.filter-cb').prop('checked', false);
+        applyFilters();
+      });
+
+      // Load more
+      $('#load-more-btn').on('click', function() {
+        var $matching = $cards.filter(function() { return matchesFilters(this); });
+        $matching.slice(visibleCount, visibleCount + BATCH).show();
+        visibleCount += BATCH;
+        if (visibleCount >= $matching.length) {
+          $('#load-more-wrapper').hide();
+        }
+      });
+
+      // Search
+      $('#search-input').on('input', function() {
+        var q = $(this).val().toLowerCase().trim();
+        $cards.each(function() {
+          var text = $(this).text().toLowerCase();
+          $(this).data('search-hidden', q.length > 0 && text.indexOf(q) === -1);
+        });
+        var $vis = $cards.filter(function() {
+          return !$(this).data('search-hidden') && matchesFilters(this);
+        });
+        $cards.hide();
+        $vis.slice(0, Math.max(visibleCount, BATCH)).show();
+        visibleCount = Math.max(visibleCount, BATCH);
+        $('#load-more-wrapper').toggle($vis.length > visibleCount);
+        $('#no-results').toggle($vis.length === 0);
+      });
     });
-  });
-
-  // clear filters
-  document.getElementById('clear-filters').addEventListener('click', function() {
-    activeFilters.clear();
-    document.querySelectorAll('.filter-cb').forEach(function(cb) { cb.checked = false; });
-    applyFilters();
-  });
-
-  // load more
-  document.getElementById('load-more-btn').addEventListener('click', loadMore);
-
-  // search
-  var searchInput = document.getElementById('search-input');
-  searchInput.addEventListener('input', function() {
-    var q = this.value.toLowerCase().trim();
-    cards.forEach(function(card) {
-      var title = card.querySelector('.card-title').textContent.toLowerCase();
-      var body = card.querySelector('.card-body').textContent.toLowerCase();
-      card._searchHidden = q.length > 0 && title.indexOf(q) === -1 && body.indexOf(q) === -1;
-    });
-    // re-apply visibility
-    var filtered = cards.filter(function(c) { return !c._searchHidden && matchesFilters(c); });
-    cards.forEach(function(c) { c.style.display = 'none'; });
-    filtered.slice(0, Math.max(visibleCount, BATCH)).forEach(function(c) { c.style.display = ''; });
-    visibleCount = Math.min(filtered.length, Math.max(visibleCount, BATCH));
-    var loadWrap = document.getElementById('load-more-wrapper');
-    loadWrap.style.display = filtered.length > visibleCount ? '' : 'none';
-    document.getElementById('no-results').style.display = filtered.length === 0 ? '' : 'none';
-  });
-})();
-</script>
+  }(jQuery));
+  </script>
+</body>
+</html>

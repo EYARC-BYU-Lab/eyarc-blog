@@ -1,14 +1,26 @@
-<header id="site-header">
-  <div class="header-inner">
-    <a href="{{ '/' | relative_url }}" class="site-logo">
-      <span class="logo-ey">EY</span><span class="logo-arc">ARC</span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('site-nav').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="site-nav">
-      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Blog</a>
-      <a href="{{ '/feed.xml' | relative_url }}" class="rss-link" title="RSS Feed">RSS</a>
+<section id="header" class="section">
+  <section class="container grid-lg">
+    <nav class="navbar">
+      <section class="navbar-section logo">
+        <a href="{{ '/' | relative_url }}" class="navbar-brand mr-10">
+          <img src="{{ '/assets/images/eyfoundation-logo.png' | relative_url }}" alt="{{ site.title }}" />
+        </a>
+      </section>
+      <section class="navbar-section desktop-menu">
+        <nav class="dropmenu animated">
+          <ul>
+            <li{% if page.url == '/' %} class="active"{% endif %}><a href="{{ '/' | relative_url }}">Blog</a></li>
+          </ul>
+        </nav>
+      </section>
     </nav>
+  </section>
+</section>
+
+<div class="mobile-menu">
+  <div class="button_container" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
   </div>
-</header>
+</div>

@@ -1,0 +1,213 @@
+/* General Styles */
+p {
+    margin: 0.5rem 0.5rem;
+}
+
+
+/* Header Styles */
+#header {
+    background-color: #2e2d38;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.homepage .hero {
+    padding-bottom: 6rem; /* Applies only on the homepage */
+}
+
+.hero h2 {
+    margin: 0 auto;
+}
+
+.hero h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero #to-start {
+    font-size: initial; /* Removes any specific font size */
+    position: static;   /* Resets the positioning to normal flow */
+}
+
+/* Breadcrumbs */
+#breadcrumbs {
+    margin-bottom: 0;
+    padding-left: 0;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Background Classes */
+.bg-ey-gray {
+    background: #2e2d38 !important;
+}
+
+/* Footer Styles */
+#footer {
+    padding: 1rem;
+}
+
+#footer p {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+/* Custom Section */
+.custom-section {
+    padding: 2rem 7%;
+    width: 100%;
+    background: none; /* Removes any inherited background image */
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Custom Card */
+.custom-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 750px;
+    background-color: #f9f9f9;
+    margin: 10px auto 20px auto;
+    max-height: 300px;
+    flex-wrap: wrap;
+}
+
+.custom-card img {
+    width: 49%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px; /* Padding around the image */
+    box-sizing: border-box;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .custom-card {
+        flex-direction: column; /* Switch to column layout */
+        max-height: none; /* Allow full height for the card */
+    }
+
+    .custom-card img{
+        margin: 0 auto;
+        width: 80%; /* Each item takes up full width */
+        padding: 0;
+        order: 1;
+    }
+
+    .custom-content{
+        order: 2;
+        margin: 0 auto;
+        width: 90% !important; /* Each item takes up full width */ 
+    }
+}
+
+
+.custom-card h2 {
+    height: auto;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.custom-card p {
+    height: auto;
+    margin: 0 0 1.2rem;
+}
+
+/* Custom Content */
+.custom-content {
+    padding: 10px 20px 20px 20px;
+    width: 51%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-content h2 {
+    font-size: 2em;
+    margin: 0 0 7px;
+    color: #2e2d38 !important;
+}
+
+.custom-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #2e2d38;
+}
+
+/* Buttons */
+.custom-button-yellow {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 15px;
+    margin-bottom: 2rem;
+    background-color: #ffe600;
+    color: #2e2d38;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none !important;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button-yellow:hover {
+    background-color: #CCB300;
+    color: black;
+}
+
+.custom-button-yellow:visited {
+    color: #2e2d38;
+    text-decoration: none;
+}
+
+.custom-button-black {
+    display: inline-block;
+    width: 60%;
+    padding: 12px 24px;
+    background-color: #2e2d38;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none !important;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-style: outset;
+    border-color: buttonborder;
+}
+
+.custom-button-black:hover {
+    background-color: grey;
+}
+
+.custom-button-black:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section Layout */
+section.section {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-9 {
+    width: 65%;
+}
+
+.col-3 {
+    width: 35%;
+}
+
+.search-wrapper .search-input {
+    width: 100%;
+    display: inline-block;
+}

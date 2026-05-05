@@ -1,33 +1,79 @@
----
-layout: default
----
-<section id="post-hero" class="hero hero--post">
-  <div class="hero-inner">
-    <nav class="breadcrumb">
-      <a href="{{ '/' | relative_url }}">Blog</a>
-      <span>&rsaquo;</span>
-      <span>{{ page.title }}</span>
-    </nav>
-    <h1>{{ page.title }}</h1>
-    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body id="top" class="header-fixed header-animated header-dark sticky-footer">
+  <div id="page-wrapper">
+    {% include header.html %}
 
-<section id="post-body" class="post-body-section">
-  <div class="post-container">
-    <article class="post-content">
-      {{ content }}
-    </article>
-
-    <footer class="post-footer">
-      {% if page.tags.size > 0 %}
-      <div class="post-tags">
-        {% for tag in page.tags %}
-        <span class="tag">{{ tag }}</span>
-        {% endfor %}
+    <section id="blog-hero" class="section modular-hero hero header-dark hero-tiny">
+      <div class="hero-content">
+        <section class="container grid-lg">
+          <div style="padding-top: 5rem;">
+            <nav id="breadcrumbs">
+              <ul>
+                <li><a href="{{ '/' | relative_url }}">Blog</a></li>
+                <li>{{ page.title }}</li>
+              </ul>
+            </nav>
+          </div>
+        </section>
       </div>
-      {% endif %}
-      <a href="{{ '/' | relative_url }}" class="back-link">&larr; Back to blog</a>
-    </footer>
+    </section>
+
+    <section id="start">
+      <section id="body-wrapper" class="section">
+        <section class="container grid-lg">
+          <div class="columns">
+            <div id="item" class="column col-9 col-md-12 extra-spacing">
+              <div class="content-item h-entry">
+                <div class="content-title">
+                  <h2 class="p-name">{{ page.title }}</h2>
+                  <p class="text-gray">
+                    <i class="fa fa-calendar"></i>
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+                      {{ page.date | date: "%B %-d, %Y" }}
+                    </time>
+                  </p>
+                </div>
+                <div class="e-content">
+                  {{ content }}
+                </div>
+                {% if page.tags.size > 0 %}
+                <div class="post-footer" style="margin-top:2rem; padding-top:1rem; border-top:1px solid #e7e9ed;">
+                  {% for tag in page.tags %}
+                  <span class="label label-rounded label-secondary">{{ tag }}</span>
+                  {% endfor %}
+                </div>
+                {% endif %}
+                <div class="prev-next" style="margin-top:2rem;">
+                  {% if page.previous %}
+                  <a href="{{ page.previous.url | relative_url }}" class="btn btn-sm">
+                    <i class="fa fa-angle-left"></i> {{ page.previous.title | truncatewords: 6 }}
+                  </a>
+                  {% endif %}
+                  {% if page.next %}
+                  <a href="{{ page.next.url | relative_url }}" class="btn btn-sm" style="float:right;">
+                    {{ page.next.title | truncatewords: 6 }} <i class="fa fa-angle-right"></i>
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div id="sidebar" class="column col-3 col-md-12">
+              {% include sidebar.html %}
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
   </div>
-</section>
+  {% include footer.html %}
+  {% include mobile-nav.html %}
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="{{ '/assets/vendor/js/jquery.treemenu.js' | relative_url }}"></script>
+  <script src="{{ '/assets/vendor/js/site.js' | relative_url }}"></script>
+</body>
+</html>

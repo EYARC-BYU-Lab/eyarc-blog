@@ -1,57 +1,48 @@
-<aside id="sidebar">
+{% assign class_tags = "" | split: "" %}
+{% assign level_tags = "" | split: "" %}
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% if tag contains "Class " %}
+      {% assign class_tags = class_tags | push: tag %}
+    {% elsif tag contains "Level " %}
+      {% assign level_tags = level_tags | push: tag %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign class_tags = class_tags | uniq | sort %}
+{% assign level_tags = level_tags | uniq | sort %}
 
-  <div class="sidebar-block">
-    <h4>Search</h4>
-    <div class="search-wrapper">
-      <input type="text" id="search-input" class="search-input" placeholder="Search posts…" autocomplete="off">
-    </div>
+<div class="sidebar-content">
+  <div class="search-wrapper">
+    <input type="text" id="search-input" class="form-input" placeholder="Search&hellip;" autocomplete="off">
   </div>
+</div>
 
-  <div class="sidebar-block">
-    <h4>Course Type</h4>
-    <div id="filter-class" class="filter-group">
-      {% assign class_tags = "" | split: "" %}
-      {% for post in site.posts %}
-        {% for tag in post.tags %}
-          {% if tag contains "Class " %}
-            {% assign class_tags = class_tags | push: tag %}
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-      {% assign class_tags = class_tags | uniq | sort %}
-      {% for tag in class_tags %}
-      <label class="filter-label">
-        <input type="checkbox" class="filter-cb" data-tag="{{ tag | downcase }}">
-        <span>{{ tag | remove: "Class " }}</span>
-      </label>
-      {% endfor %}
-    </div>
+<div class="sidebar-content">
+  <h4>Course Type</h4>
+  <div id="filter-class">
+    {% for tag in class_tags %}
+    <label class="form-checkbox">
+      <input type="checkbox" class="filter-cb" data-tag="{{ tag | downcase }}">
+      <i class="form-icon"></i> {{ tag | remove: "Class " }}
+    </label>
+    {% endfor %}
   </div>
+</div>
 
-  <div class="sidebar-block">
-    <h4>Level</h4>
-    <div id="filter-level" class="filter-group">
-      {% assign level_tags = "" | split: "" %}
-      {% for post in site.posts %}
-        {% for tag in post.tags %}
-          {% if tag contains "Level " %}
-            {% assign level_tags = level_tags | push: tag %}
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-      {% assign level_tags = level_tags | uniq | sort %}
-      {% for tag in level_tags %}
-      <label class="filter-label">
-        <input type="checkbox" class="filter-cb" data-tag="{{ tag | downcase }}">
-        <span>{{ tag | remove: "Level " }}</span>
-      </label>
-      {% endfor %}
-    </div>
+<div class="sidebar-content">
+  <h4>Level</h4>
+  <div id="filter-level">
+    {% for tag in level_tags %}
+    <label class="form-checkbox">
+      <input type="checkbox" class="filter-cb" data-tag="{{ tag | downcase }}">
+      <i class="form-icon"></i> {{ tag | remove: "Level " }}
+    </label>
+    {% endfor %}
   </div>
+</div>
 
-  <div class="sidebar-block" id="sidebar-results-info" style="display:none">
-    <p id="results-count"></p>
-    <button id="clear-filters" class="btn-clear">Clear filters</button>
-  </div>
-
-</aside>
+<div class="sidebar-content" id="sidebar-results-info" style="display:none">
+  <p id="results-count" class="text-gray"></p>
+  <button id="clear-filters" class="btn btn-sm">Clear filters</button>
+</div>

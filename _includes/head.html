@@ -1,10 +1,15 @@
-<meta charset="utf-8">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 30 }}">
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<title>{% if page.title and page.url != '/' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+<link rel="stylesheet" href="{{ '/assets/vendor/css/spectre.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/vendor/css/theme.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/vendor/css/bricklayer.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/vendor/css/line-awesome.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/vendor/css/eyarc-custom.css' | relative_url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
-<link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
 {% seo %}
 {% if site.google_analytics %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
