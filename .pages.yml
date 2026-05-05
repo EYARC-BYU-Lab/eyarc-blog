@@ -1,0 +1,36 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: _posts
+    filename:
+      template: "{year}-{month}-{day}-{title}.md"
+      field: create
+    fields:
+      - name: layout
+        type: string
+        hidden: true
+        default: post
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: published
+        label: Published
+        type: boolean
+        default: true
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: body
+        label: Content
+        type: rich-text

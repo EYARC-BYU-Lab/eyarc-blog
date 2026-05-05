@@ -59,9 +59,7 @@
                 {% endfor %}
               </div>
 
-              <div id="load-more-wrapper" style="text-align:center; margin-top:2rem;">
-                <button id="load-more-btn" class="btn btn-primary">Load more posts</button>
-              </div>
+              <div id="pagination" style="margin-top:2rem;"></div>
 
               <div id="no-results" style="display:none; text-align:center; padding:3rem; color:#999;">
                 No posts match the selected filters.
@@ -87,97 +85,87 @@
   <script src="{{ '/assets/vendor/js/site.js' | relative_url }}"></script>
   <script>
   (function($) {
-    var BATCH = 12;
+    var PER_PAGE = 12;
     var $cards = $('.card[data-tags]');
     var activeFilters = {};
-    var visibleCount = 0;
+    var currentPage = 1;
 
-    function matchesFilters(card) {
-      var tags = ($(card).data('tags') || '').split('|');
-      return Object.keys(activeFilters).every(function(f) {
-        return tags.indexOf(f) !== -1;
+    function getMatching() {
+      return $cards.filter(function() {
+        var tags = ($(this).data('tags') || '').split('|');
+        var filterOk = Object.keys(activeFilters).every(function(f) { return tags.indexOf(f) !== -1; });
+        return filterOk && !$(this).data('search-hidden');
       });
     }
 
-    function applyFilters() {
-      var $matching = $cards.filter(function() { return matchesFilters(this); });
-      var $nonMatching = $cards.not($matching);
+    function showPage(page) {
+      var $matching = getMatching();
+      var pages = Math.max(1, Math.ceil($matching.length / PER_PAGE));
+      currentPage = Math.min(Math.max(1, page), pages);
 
-      $nonMatching.hide();
-      $matching.each(function(i) {
-        $(this).toggle(i < BATCH);
-      });
-      visibleCount = Math.min(BATCH, $matching.length);
+      $cards.hide();
+      $matching.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE).show();
 
-      var hasFilters = Object.keys(activeFilters).length > 0;
-      $('#sidebar-results-info').toggle(hasFilters);
-      if (hasFilters) {
-        $('#results-count').text($matching.length + ' post' + ($matching.length !== 1 ? 's' : '') + ' found');
-      }
-      $('#load-more-wrapper').toggle($matching.length > BATCH);
       $('#no-results').toggle($matching.length === 0);
+      renderPagination($matching.length, pages);
 
-      // Re-init bricklayer after show/hide
-      if (window.bricklayerInstance) {
-        try { window.bricklayerInstance.redraw(); } catch(e) {}
+      if (page !== 1) {
+        $('html,body').animate({ scrollTop: $('#start').offset().top - 80 }, 200);
       }
     }
 
-    // Init bricklayer
-    $(document).ready(function() {
-      var el = document.querySelector('.bricklayer');
-      if (el) {
-        window.bricklayerInstance = new Bricklayer(el);
+    function renderPagination(total, pages) {
+      var $pag = $('#pagination').empty();
+      if (pages <= 1) return;
+
+      var ul = $('<ul class="pagination"></ul>');
+
+      function pageBtn(label, pg, disabled) {
+        var li = $('<li class="page-item"></li>');
+        if (disabled) li.addClass('disabled');
+        if (pg === currentPage && typeof label === 'number') li.addClass('active');
+        var a = $('<a class="page-link" href="#"></a>').html(label);
+        if (!disabled) a.on('click', function(e) { e.preventDefault(); showPage(pg); });
+        return li.append(a);
       }
 
-      // Show first batch
-      $cards.each(function(i) { $(this).toggle(i < BATCH); });
-      visibleCount = Math.min(BATCH, $cards.length);
-      $('#load-more-wrapper').toggle($cards.length > BATCH);
+      ul.append(pageBtn('&laquo;', currentPage - 1, currentPage === 1));
 
-      // Filter checkboxes
+      var lo = Math.max(1, currentPage - 2);
+      var hi = Math.min(pages, currentPage + 2);
+      if (lo > 1) { ul.append(pageBtn(1, 1)); if (lo > 2) ul.append('<li class="page-item disabled"><a class="page-link">&hellip;</a></li>'); }
+      for (var p = lo; p <= hi; p++) ul.append(pageBtn(p, p));
+      if (hi < pages) { if (hi < pages - 1) ul.append('<li class="page-item disabled"><a class="page-link">&hellip;</a></li>'); ul.append(pageBtn(pages, pages)); }
+
+      ul.append(pageBtn('&raquo;', currentPage + 1, currentPage === pages));
+      $pag.append(ul);
+    }
+
+    $(document).ready(function() {
+      if (document.querySelector('.bricklayer')) new Bricklayer(document.querySelector('.bricklayer'));
+
+      showPage(1);
+
       $('.filter-cb').on('change', function() {
         var tag = $(this).data('tag');
-        if (this.checked) {
-          activeFilters[tag] = true;
-        } else {
-          delete activeFilters[tag];
-        }
-        applyFilters();
+        if (this.checked) activeFilters[tag] = true; else delete activeFilters[tag];
+        var hasFilters = Object.keys(activeFilters).length > 0;
+        $('#sidebar-results-info').toggle(hasFilters);
+        if (hasFilters) { var n = getMatching().length; $('#results-count').text(n + ' post' + (n !== 1 ? 's' : '') + ' found'); }
+        showPage(1);
       });
 
-      // Clear filters
       $('#clear-filters').on('click', function() {
         activeFilters = {};
         $('.filter-cb').prop('checked', false);
-        applyFilters();
+        $('#sidebar-results-info').hide();
+        showPage(1);
       });
 
-      // Load more
-      $('#load-more-btn').on('click', function() {
-        var $matching = $cards.filter(function() { return matchesFilters(this); });
-        $matching.slice(visibleCount, visibleCount + BATCH).show();
-        visibleCount += BATCH;
-        if (visibleCount >= $matching.length) {
-          $('#load-more-wrapper').hide();
-        }
-      });
-
-      // Search
       $('#search-input').on('input', function() {
         var q = $(this).val().toLowerCase().trim();
-        $cards.each(function() {
-          var text = $(this).text().toLowerCase();
-          $(this).data('search-hidden', q.length > 0 && text.indexOf(q) === -1);
-        });
-        var $vis = $cards.filter(function() {
-          return !$(this).data('search-hidden') && matchesFilters(this);
-        });
-        $cards.hide();
-        $vis.slice(0, Math.max(visibleCount, BATCH)).show();
-        visibleCount = Math.max(visibleCount, BATCH);
-        $('#load-more-wrapper').toggle($vis.length > visibleCount);
-        $('#no-results').toggle($vis.length === 0);
+        $cards.each(function() { $(this).data('search-hidden', q.length > 0 && $(this).text().toLowerCase().indexOf(q) === -1); });
+        showPage(1);
       });
     });
   }(jQuery));

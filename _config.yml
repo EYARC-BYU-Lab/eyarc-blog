@@ -16,6 +16,13 @@ plugins:
 google_analytics: G-ZJ21NDWLQE
 feed:
   path: feed.xml
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+
 exclude:
   - Gemfile
   - Gemfile.lock
