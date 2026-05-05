@@ -70,9 +70,6 @@
 
             </div>
 
-            <div id="sidebar" class="column col-3 col-md-12">
-              {% include sidebar-post.html %}
-            </div>
           </div>
 
         </section>
@@ -97,6 +94,12 @@
         <img src="{{ '/assets/images/desk.jpg' | relative_url }}" alt="Academic Case Materials Image">
       </div>
     </div>
+
+    <section id="body-wrapper" class="section blog-listing">
+      <section class="container grid-lg">
+        {% include sidebar-post.html %}
+      </section>
+    </section>
 
   </div>
 
