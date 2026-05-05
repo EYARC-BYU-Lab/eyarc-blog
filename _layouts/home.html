@@ -1,0 +1,140 @@
+---
+layout: default
+---
+<section id="hero" class="hero hero--home">
+  <div class="hero-inner">
+    <h1>EY Academic Resource Center</h1>
+    <p class="hero-sub">EYARC materials are provided free to academics.<br>Join us for leading-edge content.</p>
+  </div>
+</section>
+
+<section id="blog-main" class="blog-main">
+  <div class="blog-container">
+
+    {% include sidebar.html %}
+
+    <div id="posts-area">
+      <div id="posts-grid">
+        {% for post in site.posts %}
+          {% include post-card.html post=post %}
+        {% endfor %}
+      </div>
+
+      <div id="load-more-wrapper" class="load-more-wrapper">
+        <button id="load-more-btn" class="btn-load-more">Load more posts</button>
+      </div>
+
+      <div id="no-results" class="no-results" style="display:none">
+        <p>No posts match the selected filters.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  var BATCH = 12;
+  var cards = Array.from(document.querySelectorAll('.post-card'));
+  var activeFilters = new Set();
+  var visibleCount = 0;
+
+  function matchesFilters(card) {
+    if (activeFilters.size === 0) return true;
+    var tags = card.dataset.tags ? card.dataset.tags.split('|') : [];
+    return Array.from(activeFilters).every(function(f) {
+      return tags.indexOf(f) !== -1;
+    });
+  }
+
+  function applyFilters() {
+    var matching = cards.filter(matchesFilters);
+    var nonMatching = cards.filter(function(c) { return !matchesFilters(c); });
+
+    // hide all non-matching
+    nonMatching.forEach(function(c) { c.style.display = 'none'; });
+
+    // show first BATCH matching, hide the rest
+    matching.forEach(function(c, i) {
+      c.style.display = i < BATCH ? '' : 'none';
+    });
+    visibleCount = Math.min(BATCH, matching.length);
+
+    var loadBtn = document.getElementById('load-more-btn');
+    var loadWrap = document.getElementById('load-more-wrapper');
+    var noResults = document.getElementById('no-results');
+    var infoBlock = document.getElementById('sidebar-results-info');
+    var countEl = document.getElementById('results-count');
+
+    if (matching.length === 0) {
+      noResults.style.display = '';
+      loadWrap.style.display = 'none';
+    } else {
+      noResults.style.display = 'none';
+      loadWrap.style.display = matching.length > BATCH ? '' : 'none';
+    }
+
+    if (activeFilters.size > 0) {
+      infoBlock.style.display = '';
+      countEl.textContent = matching.length + ' post' + (matching.length !== 1 ? 's' : '') + ' found';
+    } else {
+      infoBlock.style.display = 'none';
+    }
+  }
+
+  function loadMore() {
+    var matching = cards.filter(matchesFilters);
+    var nextBatch = matching.slice(visibleCount, visibleCount + BATCH);
+    nextBatch.forEach(function(c) { c.style.display = ''; });
+    visibleCount += nextBatch.length;
+    if (visibleCount >= matching.length) {
+      document.getElementById('load-more-wrapper').style.display = 'none';
+    }
+  }
+
+  // init: show first batch, hide rest
+  applyFilters();
+
+  // filter checkboxes
+  document.querySelectorAll('.filter-cb').forEach(function(cb) {
+    cb.addEventListener('change', function() {
+      var tag = this.dataset.tag;
+      if (this.checked) {
+        activeFilters.add(tag);
+      } else {
+        activeFilters.delete(tag);
+      }
+      applyFilters();
+    });
+  });
+
+  // clear filters
+  document.getElementById('clear-filters').addEventListener('click', function() {
+    activeFilters.clear();
+    document.querySelectorAll('.filter-cb').forEach(function(cb) { cb.checked = false; });
+    applyFilters();
+  });
+
+  // load more
+  document.getElementById('load-more-btn').addEventListener('click', loadMore);
+
+  // search
+  var searchInput = document.getElementById('search-input');
+  searchInput.addEventListener('input', function() {
+    var q = this.value.toLowerCase().trim();
+    cards.forEach(function(card) {
+      var title = card.querySelector('.card-title').textContent.toLowerCase();
+      var body = card.querySelector('.card-body').textContent.toLowerCase();
+      card._searchHidden = q.length > 0 && title.indexOf(q) === -1 && body.indexOf(q) === -1;
+    });
+    // re-apply visibility
+    var filtered = cards.filter(function(c) { return !c._searchHidden && matchesFilters(c); });
+    cards.forEach(function(c) { c.style.display = 'none'; });
+    filtered.slice(0, Math.max(visibleCount, BATCH)).forEach(function(c) { c.style.display = ''; });
+    visibleCount = Math.min(filtered.length, Math.max(visibleCount, BATCH));
+    var loadWrap = document.getElementById('load-more-wrapper');
+    loadWrap.style.display = filtered.length > visibleCount ? '' : 'none';
+    document.getElementById('no-results').style.display = filtered.length === 0 ? '' : 'none';
+  });
+})();
+</script>

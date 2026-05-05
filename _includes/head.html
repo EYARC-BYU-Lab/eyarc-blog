@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 30 }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+<link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
+{% seo %}
+{% if site.google_analytics %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}

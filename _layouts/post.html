@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<section id="post-hero" class="hero hero--post">
+  <div class="hero-inner">
+    <nav class="breadcrumb">
+      <a href="{{ '/' | relative_url }}">Blog</a>
+      <span>&rsaquo;</span>
+      <span>{{ page.title }}</span>
+    </nav>
+    <h1>{{ page.title }}</h1>
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </div>
+</section>
+
+<section id="post-body" class="post-body-section">
+  <div class="post-container">
+    <article class="post-content">
+      {{ content }}
+    </article>
+
+    <footer class="post-footer">
+      {% if page.tags.size > 0 %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <a href="{{ '/' | relative_url }}" class="back-link">&larr; Back to blog</a>
+    </footer>
+  </div>
+</section>

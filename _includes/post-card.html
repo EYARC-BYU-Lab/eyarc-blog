@@ -1,0 +1,18 @@
+{% assign p = include.post %}
+<article class="post-card" data-tags="{{ p.tags | join: '|' | downcase }}">
+  <div class="card-header">
+    <time class="card-date" datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%B %-d, %Y" }}</time>
+    <h2 class="card-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
+  </div>
+  <div class="card-body">
+    {{ p.excerpt | strip_html | truncatewords: 40 }}
+  </div>
+  {% if p.tags.size > 0 %}
+  <div class="card-tags">
+    {% for tag in p.tags %}
+    <span class="tag tag--{{ tag | downcase | replace: ' ', '-' }}">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <a href="{{ p.url | relative_url }}" class="card-readmore">Read more &rarr;</a>
+</article>

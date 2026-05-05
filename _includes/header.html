@@ -1,0 +1,14 @@
+<header id="site-header">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <span class="logo-ey">EY</span><span class="logo-arc">ARC</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('site-nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Blog</a>
+      <a href="{{ '/feed.xml' | relative_url }}" class="rss-link" title="RSS Feed">RSS</a>
+    </nav>
+  </div>
+</header>
