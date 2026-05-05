@@ -7,69 +7,76 @@
   <div id="page-wrapper">
     {% include header.html %}
 
-    <section id="blog-hero" class="section modular-hero hero header-dark hero-tiny">
-      <div class="hero-content">
-        <section class="container grid-lg">
-          <div style="padding-top: 5rem;">
-            <nav id="breadcrumbs">
-              <ul>
-                <li><a href="{{ '/' | relative_url }}">Blog</a></li>
-                <li>{{ page.title }}</li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-      </div>
-    </section>
-
     <section id="start">
-      <section id="body-wrapper" class="section">
+      <section id="body-wrapper" class="section blog-listing">
         <section class="container grid-lg">
+
+          <div id="breadcrumbs" style="padding-top:5rem;">
+            <span itemscope itemtype="http://schema.org/BreadcrumbList">
+              <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="{{ '/' | relative_url }}"><span itemprop="name">Home</span></a>
+                <i class="fa fa-angle-right"></i>
+              </span>
+              <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <span itemprop="name">{{ page.title }}</span>
+              </span>
+            </span>
+          </div>
+
           <div class="columns">
             <div id="item" class="column col-9 col-md-12 extra-spacing">
+
               <div class="content-item h-entry">
-                <div class="content-title">
-                  <h2 class="p-name">{{ page.title }}</h2>
-                  <p class="text-gray">
-                    <i class="fa fa-calendar"></i>
+                <div class="content-title text-center">
+                  <h2 class="p-name mt-1">{{ page.title }}</h2>
+
+                  <span class="blog-date">
                     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
-                      {{ page.date | date: "%B %-d, %Y" }}
+                      <i class="fa fa-calendar"></i> {{ page.date | date: "%-d %b %Y" }}
                     </time>
-                  </p>
+                  </span>
+
+                  {% if page.tags.size > 0 %}
+                  <br>
+                  <span class="tags" style="display:inline-block;margin-top:.5rem;">
+                    {% for tag in page.tags %}
+                    <a class="label label-rounded label-secondary p-category"
+                       href="{{ '/' | relative_url }}?filter={{ tag | downcase | url_encode }}">{{ tag }}</a>
+                    {% endfor %}
+                  </span>
+                  {% endif %}
                 </div>
+
                 <div class="e-content">
                   {{ content }}
                 </div>
-                {% if page.tags.size > 0 %}
-                <div class="post-footer" style="margin-top:2rem; padding-top:1rem; border-top:1px solid #e7e9ed;">
-                  {% for tag in page.tags %}
-                  <span class="label label-rounded label-secondary">{{ tag }}</span>
-                  {% endfor %}
-                </div>
-                {% endif %}
-                <div class="prev-next" style="margin-top:2rem;">
-                  {% if page.previous %}
-                  <a href="{{ page.previous.url | relative_url }}" class="btn btn-sm">
-                    <i class="fa fa-angle-left"></i> {{ page.previous.title | truncatewords: 6 }}
-                  </a>
-                  {% endif %}
-                  {% if page.next %}
-                  <a href="{{ page.next.url | relative_url }}" class="btn btn-sm" style="float:right;">
-                    {{ page.next.title | truncatewords: 6 }} <i class="fa fa-angle-right"></i>
-                  </a>
-                  {% endif %}
-                </div>
               </div>
+
+              <p class="prev-next text-center">
+                {% if page.next %}
+                <a class="btn" href="{{ page.next.url | relative_url }}">
+                  <i class="fa fa-angle-left"></i> Prev Post
+                </a>
+                {% endif %}
+                {% if page.previous %}
+                <a class="btn" href="{{ page.previous.url | relative_url }}">
+                  Next Post <i class="fa fa-angle-right"></i>
+                </a>
+                {% endif %}
+              </p>
+
             </div>
+
             <div id="sidebar" class="column col-3 col-md-12">
-              {% include sidebar.html %}
+              {% include sidebar-post.html %}
             </div>
           </div>
+
         </section>
       </section>
     </section>
-
   </div>
+
   {% include footer.html %}
   {% include mobile-nav.html %}
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

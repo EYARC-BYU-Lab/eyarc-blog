@@ -144,6 +144,26 @@
     $(document).ready(function() {
       if (document.querySelector('.bricklayer')) new Bricklayer(document.querySelector('.bricklayer'));
 
+      // Apply ?filter= or ?search= from post page tag/search links
+      var params = new URLSearchParams(window.location.search);
+      var filterParam = params.get('filter');
+      var searchParam = params.get('search');
+      if (filterParam) {
+        var $cb = $('.filter-cb[data-tag="' + decodeURIComponent(filterParam) + '"]');
+        if ($cb.length) {
+          $cb.prop('checked', true);
+          activeFilters[decodeURIComponent(filterParam)] = true;
+          $('#sidebar-results-info').show();
+          var n = getMatching().length;
+          $('#results-count').text(n + ' post' + (n !== 1 ? 's' : '') + ' found');
+        }
+      }
+      if (searchParam) {
+        var q = decodeURIComponent(searchParam).toLowerCase();
+        $('#search-input').val(decodeURIComponent(searchParam));
+        $cards.each(function() { $(this).data('search-hidden', q.length > 0 && $(this).text().toLowerCase().indexOf(q) === -1); });
+      }
+
       showPage(1);
 
       $('.filter-cb').on('change', function() {
