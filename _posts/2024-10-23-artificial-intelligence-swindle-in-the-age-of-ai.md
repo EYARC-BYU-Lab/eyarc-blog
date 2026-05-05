@@ -16,7 +16,7 @@ This case can focus on generative AI and Alteryx as technologies, but the primar
 
 This case is highly flexible. The user guide provides four different examples of how this case could be taught. Suitable courses include forensics, audit or data analytics classes. 
 
-NOTE: We recommend you introduce students to [prompt engineering case](https://eyarc.site/blog/artificial-intelligence-prompt-engineering-case) prior to covering this case.  
+NOTE: We recommend you introduce students to [prompt engineering case]({{ '/blog/artificial-intelligence-prompt-engineering-case/' | relative_url }}) prior to covering this case.  
 
 **Suitable courses:** Forensics, Audit, Data Analytics
 [Link to download files (requires login)](https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Innovation%20mindset/Artificial%20intelligence/Swindle%20in%20the%20age%20of%20AI?csf=1&web=1&e=eKubP4)

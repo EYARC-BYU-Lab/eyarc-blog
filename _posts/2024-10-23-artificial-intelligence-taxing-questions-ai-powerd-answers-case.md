@@ -15,7 +15,7 @@ This case has students practice and experiment with different ways to use an LLM
 
 Students are asked to prepare a memo, with or without the use of AI, describing what they learned about tax research using these AI tools.
 
-NOTE: We recommend you introduce students to [prompt engineering case](https://eyarc.site/blog/artificial-intelligence-prompt-engineering-case) prior to covering this case.  
+NOTE: We recommend you introduce students to [prompt engineering case]({{ '/blog/artificial-intelligence-prompt-engineering-case/' | relative_url }}) prior to covering this case.  
 
 **Suitable courses:** Data Analytics, Tax
 [Link to download files (requires login)](https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Innovation%20mindset/Artificial%20intelligence/Taxing%20questions,%20AI-powered%20solutions?csf=1&web=1&e=3LUzIO)
