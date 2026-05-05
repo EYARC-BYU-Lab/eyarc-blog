@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Pepsi and Coke reporting challenge'
-date: 2024-03-13
+date: 2024-10-30
 published: true
 tags:
   - 'Class Financial'

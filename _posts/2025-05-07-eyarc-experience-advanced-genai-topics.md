@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'EYARC Experience: Advanced GenAI Topics'
-date: 2025-01-17
+date: 2025-05-07
 published: true
 tags:
   - 'Class AIS'
