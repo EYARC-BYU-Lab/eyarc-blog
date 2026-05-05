@@ -23,6 +23,7 @@ content:
         label: Date
         type: date
         required: true
+      - name: published
         label: Published
         type: boolean
         default: true
