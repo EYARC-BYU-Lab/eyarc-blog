@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escape from the Digital Dungeon</title>
+  <style>
+    body {
+      font-family: "Ernst & Young Font", Arial, sans-serif;
+      color: #333333;
+      background-color: #f6f6f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 32px;
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #333333;
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #ffe600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #cccccc;
+    }
+
+    .code-input {
+      margin-bottom: 10px;
+    }
+
+    .result-message {
+      margin-top: 20px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+  </style>
+  <script>
+    let attempts = 0;
+
+    function submitCode() {
+      attempts++;
+      var codeInput = document.getElementById("code").value;
+      var resultMessage = document.getElementById("resultMessage");
+
+      var code1 = window.atob("NDY2OQ=="); 
+      var code2 = window.atob("NTYyMw=="); 
+      var answer = window.atob("MDExMjM1ODEzMjEzNA=="); 
+
+      setTimeout(() => {
+        if (codeInput === code1 || codeInput === code2) {
+          resultMessage.style.display = "block";
+          resultMessage.textContent = "Correct! The answer to submit to your professor is " + answer;
+          resultMessage.style.color = "#ffffff";
+        } else {
+          resultMessage.style.display = "block";
+          resultMessage.textContent = "That is incorrect. Try again before the time runs out and Rumpelstiltskin posts all your data!";
+          resultMessage.style.color = "#ff0000";
+        }
+      }, attempts * 1000);
+    }
+
+    function clearMessage() {
+      var resultMessage = document.getElementById("resultMessage");
+      resultMessage.style.display = "none";
+      resultMessage.textContent = "";
+    }
+  </script>
+</head>
+<body>
+<header style="text-align: center;">
+  <h1>Escape from the Digital Dungeon</h1>
+  <a href="https://www.ey.com/en_us/about-us/ey-foundation-and-university-relations/academic-resource-center" style="display: block; margin-top: 10px;">
+    <img src="EYARCImage.jpg" alt="Logo" style="display: block; margin: 0 auto;">
+  </a>
+</header>
+
+  <main>
+    <p style="background-color: #333333; color: #ffffff;">Provided by the <a href="https://www.ey.com/en_us/about-us/ey-foundation-and-university-relations/academic-resource-center" style="color: #ffe600;">EYARC</a></p>
+
+    <div class="image-container">
+      <img src="Rumpelstiltskin.jpg" alt="Rumpelstiltskin Image">
+    </div>
+
+    <h2>Instructions: Enter the code to satisfy Rumpelstiltskin</h2>
+
+    <div class="code-input">
+      <input type="text" id="code" placeholder="Enter code" oninput="clearMessage()">
+      <button onclick="submitCode()">Submit</button>
+    </div>
+
+    <p class="result-message" id="resultMessage"></p>
+  </main>
+</body>
+</html>
+

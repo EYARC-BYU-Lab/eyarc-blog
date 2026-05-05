@@ -19,7 +19,7 @@ In addition to the data responses, the case asks students to consider the impact
 
 The case can be implemented in class, as homework, as a student project or as part of an exam. Solutions are provided in Alteryx. This case is accompanied with how-to videos for the Alteryx solution.
 
-[Go to this website](https://eyarc.site/cyber/) to submit your final answers.
+[Go to this website]({{ '/cyber/' | relative_url }}) to submit your final answers.
 
 **Suitable courses:** This case is suitable for a cybersecurity, AIS, auditing (external or internal), forensics, or data analytics course 
 
