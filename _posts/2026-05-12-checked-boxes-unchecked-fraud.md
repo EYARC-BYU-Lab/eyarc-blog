@@ -19,5 +19,5 @@ Across multiple parts, students assess how different measurement approaches (e.g
 
 **Suitable courses**: Auditing, forensic accounting, or governmental accounting.
 
-[Link to download files (requires login)]([https://eyus.sharepoint.com/sites/EYARC/SitePages/Checked-boxes.aspx?Mode=Edit](https://eyus.sharepoint.com/sites/EYARC/SitePages/Checked-boxes.aspx?Mode=Edit))
+[Link to download files (requires login)](https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Fraud/Checked%20boxes,%20unchecked%20fraud?csf=1&web=1&e=NgzeA2)
 
