@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Checked boxes, unchecked fraud
+title: Checked Boxes, Unchecked Fraud
 date: 2026-05-12
 published: true
 tag_class:
   - Class Audit
   - Class Forensics
+tag_level:
+  - Level Beginner
 ---
 This case introduces students to fraud as a legal concept grounded in intent and challenges them to distinguish fraud from broader categories of noncompliance and improper payments. Students analyze government data and case materials to compare two major sources of federal financial loss—taxes legally owed but not paid (the tax gap) and government payments issued improperly, including refundable tax credits and Medicaid payments.  
 
