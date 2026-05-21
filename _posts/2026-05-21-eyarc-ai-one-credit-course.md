@@ -23,6 +23,6 @@ Currently, the course materials are available in Canvas format, with additional 
 
 **Suitable courses**: GenAI Course, AIS, or other classes that want AI content
 
-[Link to download files (requires login)]([https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Artificial%20intelligence/EYARC%20AI%20one-course%20syllabus?csf=1&web=1&e=5kCdDg](https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Artificial%20intelligence/EYARC%20AI%20one-course%20syllabus?csf=1&web=1&e=5kCdDg)) 
+[Link to download files (requires login)](https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Artificial%20intelligence/EYARC%20AI%20one-course%20syllabus?csf=1&web=1&e=e1XDEE) 
 
 Questions? Reach out to [eyarc@ey.com](mailto:eyarc@ey.com).
