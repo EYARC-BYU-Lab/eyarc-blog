@@ -7,6 +7,8 @@ tag_class:
   - Class Tax
 tag_level:
   - Level Intermediate
+tag_tools:
+  - GenAI
 tag_custom:
   - Research
 ---
