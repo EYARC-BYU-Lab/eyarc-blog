@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "EYARC Experience: Tax Research Memo - Part 1"
-date: 2026-08-28
+date: 2026-08-27
 published: true
 tag_class:
   - Class Tax
