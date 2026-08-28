@@ -28,5 +28,5 @@ Note: To complete Part 2, you will rely on a pdf copy of your drafted facts and 
 
 **Suitable courses:** Tax
 
-[You must have an account with EYARC Experience and then go to the Assignment Catalog to review]([[https://experience.eyarc.site/](https://experience.eyarc.site/)](https://experience.eyarc.site/](https://experience.eyarc.site/)))
+[You must have an account with EYARC Experience and then go to the Assignment Catalog to review]([https://experience.eyarc.site/](https://experience.eyarc.site/))
 
