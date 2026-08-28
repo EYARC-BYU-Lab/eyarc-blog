@@ -29,5 +29,5 @@ After drafting the facts and issues, you will receive a pdf copy of your draft a
 
 **Suitable courses:** Tax
 
-[You must have an account with EYARC Experience and then go to the Assignment Catalog to review]([https://experience.eyarc.site/](https://experience.eyarc.site/))
+[You must have an account with EYARC Experience and then go to the Assignment Catalog to review](https://experience.eyarc.site/)
 
