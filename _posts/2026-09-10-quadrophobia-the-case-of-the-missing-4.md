@@ -22,4 +22,4 @@ tag_tools:
 
 **Suitable courses:** Data analytics, Accounting information systems; auditing (external or internal); Financial accounting; Fraud
 
-[Link to download files (requires login)]([https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Analytics%20mindset/Case%20studies/Quadrophobia%20-%20the%20case%20of%20the%20missing%204?d=we0f61943e9024eea88a60dc508084668&csf=1&web=1&e=ifvyk0](https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Analytics%20mindset/Case%20studies/Quadrophobia%20-%20the%20case%20of%20the%20missing%204?d=we0f61943e9024eea88a60dc508084668&csf=1&web=1&e=ifvyk0))
+[Link to download files (requires login)](https://eyus.sharepoint.com/:f:/r/sites/EYARC/EYARC/Analytics%20mindset/Case%20studies/Quadrophobia%20-%20the%20case%20of%20the%20missing%204?d=we0f61943e9024eea88a60dc508084668&csf=1&web=1&e=scB5kF)
