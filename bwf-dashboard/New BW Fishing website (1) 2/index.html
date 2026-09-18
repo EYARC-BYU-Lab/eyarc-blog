@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credit Approval and Internal Controls — BW Fishing</title>
+<link rel="icon" href="assets/bwf-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="js/vendor/dagre.min.js"></script>
+<script defer src="js/config.js"></script>
+<script defer src="js/data.js"></script>
+<script defer src="js/core.js"></script>
+<script defer src="js/diagram.js"></script>
+<script defer src="js/app.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <img class="topbar-logo" src="assets/bwf-logo-white.png" alt="BW Fishing">
+  <div class="topbar-title">
+    <h1 id="appTitle">Credit Approval and Internal Controls</h1>
+    <span class="topbar-sub">BW Fishing · Order-to-Cash</span>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Dashboards">
+  <button class="tab active" role="tab" data-view="intro" aria-selected="true">Introduction</button>
+  <button class="tab" role="tab" data-view="overview">Dashboard</button>
+  <button class="tab" role="tab" data-view="variants">Process Variants</button>
+  <button class="tab" role="tab" data-view="transactions">Transaction Details</button>
+  <button class="tab" role="tab" data-view="sod">Segregation of Duties</button>
+</nav>
+
+<!-- global filter breadcrumbs: every chip applies to every tab -->
+<div class="crumbs" id="crumbs">
+  <span class="crumbs-label">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg>
+    Filters
+  </span>
+  <div class="chips" id="chips"><span class="chips-empty">None — click an activity, path, table value or cross-tab cell to add one · click a pill to flip it between include and exclude</span></div>
+  <button class="link-btn" id="clearFilters" hidden>Clear all</button>
+  <span class="crumbs-count" id="crumbCount"></span>
+</div>
+
+<main id="main">
+
+  <!-- ================= Introduction ================= -->
+  <section id="view-intro" class="view" role="tabpanel">
+    <div class="intro-hero card">
+      <img class="logo" src="assets/bwf-logo.png" alt="BW Fishing logo">
+      <div class="intro-hero-text">
+        <div class="eyebrow">BW Fishing · Order-to-Cash</div>
+        <h2>Credit Approval and Internal Controls</h2>
+        <p id="introLead">Process-mining dashboards for BW Fishing's sales-order event log.</p>
+      </div>
+    </div>
+
+    <div class="term-cards intro-cards">
+      <div class="term-card tc-yellow" data-tab="overview">
+        <b>Dashboard</b>
+        <span>Headline metrics — number and value of sales, customers, process variants, average activities per order and the share of orders with credit denied — plus how often each activity was performed.</span>
+      </div>
+      <div class="term-card tc-light" data-tab="variants">
+        <b>Process Variants</b>
+        <span>Every distinct path an order took through the process, colour-coded by step type, next to the interactive process map. Isolate or combine variants, click an activity or connection to include or exclude it, and switch the connection labels between case counts and average times.</span>
+      </div>
+      <div class="term-card tc-blue" data-tab="transactions">
+        <b>Transaction Details</b>
+        <span>The event log itself, one row per activity, with employee names and roles and the total value of the orders shown. Sort any column, search, or click an order, activity, employee, role or customer to show just those rows.</span>
+      </div>
+      <div class="term-card tc-navy" data-tab="sod">
+        <b>Segregation of Duties</b>
+        <span>A cross-tab of activities by employee role: how many times each role performed each activity. Click a cell, activity or role to filter on it.</span>
+      </div>
+    </div>
+
+    <div class="card how-to">
+      <h3 class="card-title">Filtering</h3>
+      <p>Click any activity or connection on the process map and choose whether to keep only the orders that include it or to exclude them. Clicking any bar on the Dashboard, any value in Transaction Details, or any cell in the Segregation of Duties table keeps only the orders that match (shift-click excludes instead). Each filter appears as a pill in the bar under the tabs and applies to <strong>every</strong> tab; click a pill to flip it between <em>include</em> and <em>exclude</em>, remove it with its ✕, or clear them all. In Transaction Details the table narrows to the matching rows themselves, so one click shows all the lines for an order, an activity, an employee or a customer.</p>
+    </div>
+  </section>
+
+  <!-- ================= Dashboard ================= -->
+  <section id="view-overview" class="view" role="tabpanel" hidden>
+    <div class="page-title">
+      <div class="title-line"><h2>Dashboard</h2><span class="sub">Order-to-Cash process mining</span></div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Summary Metrics about the Sales Data</h3>
+      <div class="kpi-row">
+        <div class="kpi"><div class="kpi-label">Number of Sales</div><div class="kpi-value" id="kSales">—</div></div>
+        <div class="kpi"><div class="kpi-label">Total Value of Sales</div><div class="kpi-value" id="kValue">—</div></div>
+        <div class="kpi"><div class="kpi-label"># of Unique Customers Making Purchases</div><div class="kpi-value" id="kCust">—</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Summary Metrics about the Process and Activities</h3>
+      <div class="kpi-row">
+        <div class="kpi"><div class="kpi-label">Number of Different Process Variants</div><div class="kpi-value" id="kVariants">—</div></div>
+        <div class="kpi"><div class="kpi-label">Average Activities per Order</div><div class="kpi-value" id="kAvg">—</div></div>
+        <div class="kpi"><div class="kpi-label">% Sales Credit Denied</div><div class="kpi-value" id="kDenied">—</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="card-title">Number of Times Each Activity is Performed <span class="hint">click a bar to filter</span></h3>
+      <div class="chart-wrap">
+        <div class="axis-title">↑ Activity</div>
+        <div id="actChart" class="bar-chart"></div>
+        <div class="axis-title right">COUNT →</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Process Variants ================= -->
+  <section id="view-variants" class="view" role="tabpanel" hidden>
+    <div class="page-title">
+      <div class="title-line"><h2>Process Variants</h2><span class="sub" id="veSub"></span></div>
+    </div>
+
+    <div class="explorer-body">
+      <aside class="variant-panel" id="variantPanel">
+        <button class="rail" id="btnExpand" title="Show the variant list" aria-label="Show the variant list" hidden>
+          <span class="rail-ico">›</span>
+          <span class="rail-text">Variants</span>
+        </button>
+        <div class="panel-head">
+          <div class="coverage">
+            <svg class="donut" id="donut" viewBox="0 0 96 96" role="img" aria-label="Share of cases covered">
+              <circle class="donut-track" cx="48" cy="48" r="38"></circle>
+              <circle class="donut-ring" id="donutRing" cx="48" cy="48" r="38"></circle>
+              <text class="donut-pct" id="donutPct" x="48" y="48">100%</text>
+            </svg>
+            <div class="coverage-text">
+              <b id="covCases">499 of 499 cases</b>
+              <span class="muted" id="covVariants">18 of 18 variants selected</span>
+            </div>
+            <button class="icon-btn" id="btnCollapse" title="Hide the variant list to give the map the full width" aria-label="Hide the variant list">‹</button>
+          </div>
+          <div class="panel-actions" id="presetButtons"></div>
+          <div class="strip-legend" id="stripLegend"></div>
+        </div>
+
+        <div class="variant-table-wrap">
+          <table class="variant-table" id="variantTable">
+            <thead>
+              <tr>
+                <th class="chk"><input type="checkbox" id="chkAll" checked aria-label="Select all variants"></th>
+                <th>#</th>
+                <th>Steps</th>
+                <th class="num sortable" data-sort="count">Cases <span class="sort-ico"></span></th>
+                <th>Share</th>
+                <th class="num sortable th-menu" data-sort="tpt" id="thTime"><span id="thTimeLabel">Avg time</span> <span class="sort-ico"></span>
+                  <div class="menu right" id="timeMenu" hidden>
+                    <div class="menu-title">Sort</div>
+                    <button data-tsort="desc">Longest first</button>
+                    <button data-tsort="asc">Shortest first</button>
+                    <div class="menu-title">Unit</div>
+                    <button data-unit="auto">Auto (d / h / min)</button>
+                    <button data-unit="s">Seconds</button>
+                    <button data-unit="m">Minutes</button>
+                    <button data-unit="h">Hours</button>
+                    <button data-unit="d">Days</button>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="panel-foot muted">Click a row to show only that variant · Ctrl/⌘-click or tick boxes to combine · hover for the full path</div>
+      </aside>
+
+      <div class="map-wrap">
+        <div id="diagram" class="diagram"></div>
+        <div class="map-ctls left">
+          <div class="seg" role="group" aria-label="Connection labels">
+            <button class="seg-btn active" data-metric="cases" title="Label each connection with the number of cases">Cases</button>
+            <button class="seg-btn" data-metric="time" title="Label each connection with the average wait between the two activities">Avg. time</button>
+          </div>
+        </div>
+        <div class="map-ctls">
+          <button class="ctl legend-btn" id="btnLegend" aria-expanded="false">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="5" cy="6" r="1.5"/><circle cx="5" cy="12" r="1.5"/><circle cx="5" cy="18" r="1.5"/><path d="M10 6h10M10 12h10M10 18h10"/></svg>
+            Legend
+          </button>
+          <div class="zoom-group">
+            <button class="ctl" id="btnFit" title="Fit to window">⛶</button>
+            <button class="ctl" id="btnZoomOut" title="Zoom out">−</button>
+            <span class="zoom-pct" id="zoomPct">100%</span>
+            <button class="ctl" id="btnZoomIn" title="Zoom in">+</button>
+          </div>
+        </div>
+        <div class="legend" id="legendBox" hidden>
+          <b>Reading the process map</b>
+          <div id="legendCats"></div>
+          <div class="legend-row"><span class="lg-edge"></span> Connection — thicker = more cases, or a longer average wait in Avg. time mode; the label is the count or the wait</div>
+          <div class="legend-row"><span class="lg-term"></span> Start / End of the cases</div>
+          <div class="legend-row"><span class="lg-node selected"></span> Gold outline = currently filtered on</div>
+          <div class="legend-row muted">Click an activity or connection for filter options · drag to pan · scroll or double-click to zoom</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Transaction Details ================= -->
+  <section id="view-transactions" class="view" role="tabpanel" hidden>
+    <div class="page-title">
+      <div class="title-line"><h2>Transaction Details</h2><span class="sub">One row per recorded activity · click an order, activity, employee, role or customer to show just those rows</span></div>
+      <div class="title-kpi">
+        <span class="kpi-label">SO Value of Selected Items</span>
+        <span class="kpi-value" id="soValue">—</span>
+      </div>
+    </div>
+
+    <div class="card table-card">
+      <div class="table-tools">
+        <input type="search" id="txSearch" placeholder="Search order, activity, employee or customer…" aria-label="Search transactions">
+        <span class="muted" id="txCount"></span>
+      </div>
+      <div class="table-scroll" id="txScroll">
+        <table class="data-table" id="txTable">
+          <thead>
+            <tr>
+              <th class="num sortable" data-col="id">Transaction ID</th>
+              <th class="sortable" data-col="act">Activity</th>
+              <th class="num sortable" data-col="ts">Timestamp</th>
+              <th class="num sortable" data-col="emp">Emp #</th>
+              <th class="sortable" data-col="empName">Employee Name</th>
+              <th class="sortable" data-col="role">Employee Role</th>
+              <th class="sortable" data-col="company">Company Name</th>
+              <th class="num sortable" data-col="amount">Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Segregation of Duties ================= -->
+  <section id="view-sod" class="view" role="tabpanel" hidden>
+    <div class="page-title">
+      <div class="title-line"><h2>Segregation of Duties</h2><span class="sub">Activities per department · click a cell, activity or role to filter</span></div>
+    </div>
+
+    <div class="card">
+      <div class="table-scroll pivot-scroll">
+        <table class="pivot-table" id="sodTable"></table>
+      </div>
+      <p class="muted small">Each cell is the number of times the activity was performed by an employee in that role, within the orders currently in scope. Blank means never.</p>
+    </div>
+  </section>
+
+</main>
+
+<div id="tooltip" class="tooltip" hidden></div>
+</body>
+</html>
