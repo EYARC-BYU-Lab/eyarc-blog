@@ -23,4 +23,4 @@ This template allows professors to assign students SQL problems that are based o
 
 **Suitable courses:** Data analytics, AIS 
 
-[You must have an account with EYARC Experience and then go to the Assignment Catalog to review. Look under "Templates"]([[https://experience.eyarc.site/](https://experience.eyarc.site/](https://experience.eyarc.site/)](https://experience.eyarc.site/](https://experience.eyarc.site/)](https://experience.eyarc.site/](https://experience.eyarc.site/))))
+**Access Instructions:** You must have an account with EYARC Experience to review this assignment. Visit the [EYARC Experience website](https://experience.eyarc.site/), navigate to the **Assignment Catalog**, and look under **Templates**.
