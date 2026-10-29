@@ -13,16 +13,14 @@ tag_level:
 tag_tools:
   - SQL
 ---
-This template allows professors to assign students SQL problems that are based on revenue cycle data. Students will complete a series of SQL problems selected by their instructor. There are over 350 SQL questions you can select from to assign. This assignment can be structured at an introductory, intermediate, or advanced level, depending on the depth of the assessment desired. Professors may elect to give this assignment as homework or as an assessment. 
+This template allows professors to assign students SQL problems that are based on revenue cycle data. Students will complete a series of SQL problems selected by their instructor. There are over 350 SQL questions you can select from to assign. This assignment can be structured at an introductory, intermediate, or advanced level, depending on the depth of the assessment desired. Professors may elect to give this assignment as homework or as an assessment.
 
-**Learning objectives** 
+**Learning Objectives**
 
 1. Write and execute SQL queries to retrieve, filter, organize, and alter data from relational tables.
-
 2. Interpret and navigate database schemas to understand how information is structured and related.
-
 3. Strengthen analytical thinking and problem-solving skills through experimentation with real datasets.
 
-**Suitable courses:** Data analytics, AIS 
+**Suitable Courses:** Data Analytics, AIS
 
-[You must have an account with EYARC Experience and then go to the Assignment Catalog to review. Look under "Templates"]([[[https://experience.eyarc.site/](https://experience.eyarc.site/)](https://experience.eyarc.site/](https://experience.eyarc.site/)](https://experience.eyarc.site/](https://experience.eyarc.site/)](https://experience.eyarc.site/](https://experience.eyarc.site/))))
+**Access Instructions:** You must have an account with EYARC Experience to review this assignment. Visit the [EYARC Experience website](https://experience.eyarc.site/), navigate to the **Assignment Catalog**, and look under **Templates**.
